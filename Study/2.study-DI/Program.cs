@@ -14,4 +14,5 @@ ILogServise logServise= serviseProvider.GetService<ILogServise>();
 // используем полученный logServise
 logServise.Write("hi-my dog");
 services = new ServiceCollection().AddTransient<ICalculate, DeleteLogServisecs>();
-ICalculate calculate = services.
+ICalculate calculate = serviseProvider.GetService<ICalculate>();
+calculate.Run(13, 7);
