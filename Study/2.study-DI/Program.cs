@@ -1,4 +1,5 @@
-﻿using _2.study_DI.Domain;
+﻿using _2.study_DI;
+using _2.study_DI.Domain;
 using _2.study_DI.Servises.CalculateServises;
 using _2.study_DI.Servises.LogServises;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,7 +17,6 @@ ICalculate calculate = serviseProvider.GetService<ICalculate>();
 // используем полученный logServise
 logServise.Write("hi-my dog");
 calculate.Run(14, 5);
-//services = new ServiceCollection().AddTransient<ICalculate, DeleteLogServisecs>();
-//ICalculate calculate = serviseProvider.GetService<ICalculate>();
-//calculate.Run(13, 7);
+Loger loger = new Loger(logServise);
+loger.Log("stady is coll? when are not stupid");
 
