@@ -12,6 +12,9 @@ namespace Study4.Servises
         //public string GetTime() => DateTime.Now.ToShortTimeString();
         public string GetTime()
         {
+
+            //throw new Exception();
+
             string result=string.Empty;
             result= DateTime.Now.ToShortTimeString();
             return result;
