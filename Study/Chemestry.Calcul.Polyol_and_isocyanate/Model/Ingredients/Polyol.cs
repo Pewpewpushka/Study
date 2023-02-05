@@ -8,6 +8,9 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
     public class Polyol
     {
+        /// <summary>
+        /// Наименование
+        /// </summary>
         public string Name { get; set; }
         public double OHv { get; set; }
         public double Functions { get; set; }
