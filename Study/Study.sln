@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{94AABF48-0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study6_Introduse_Scope", "Study6_Introduse_Scope\Study6_Introduse_Scope.csproj", "{F33E012F-952E-4A39-887B-4DCA827C16A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chemestry.Calcul.Polyol_and_isocyanate", "Chemestry.Calcul.Polyol_and_isocyanate\Chemestry.Calcul.Polyol_and_isocyanate.csproj", "{F95021D8-054E-4023-BF7D-3FB2E0F9C038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F33E012F-952E-4A39-887B-4DCA827C16A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F33E012F-952E-4A39-887B-4DCA827C16A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F33E012F-952E-4A39-887B-4DCA827C16A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
