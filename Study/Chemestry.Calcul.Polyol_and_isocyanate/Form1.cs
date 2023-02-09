@@ -6,5 +6,20 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void btRegin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btElastic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btBaseIngrelients_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
