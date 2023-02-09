@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-    internal class BlowingAgents
+    class BlowingAgents
     {
+        /// <summary>
+        /// Наименование
+        /// </summary>
+        public string Name { get; set; }
+        public double OHv { get; set; }
+        public double Functions { get; set; }
+        public double MW { get; set; }
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-    internal class Silicones
+     class Silicones
     {
+
+        /// <summary>
+        /// Наименование
+        /// </summary>
+        public string Name { get; set; }
+        public double Viscosity25oC { get; set; }
     }
 }

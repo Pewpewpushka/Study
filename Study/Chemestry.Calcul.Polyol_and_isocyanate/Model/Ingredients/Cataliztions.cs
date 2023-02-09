@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-    internal class Cataliztions
+     class Cataliztions
     {
+        /// <summary>
+        /// Наименование катализатора
+        /// </summary>
+        public string Name { get; set; }
+        public double MW { get; set; }
+        public double Viscosity25oC { get; set; }
     }
 }
