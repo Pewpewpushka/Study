@@ -6,26 +6,32 @@ using System.Threading.Tasks;
 
 namespace CodeWars
 {
-	public static class Kata
-	{
-		public static string EvenOrOdd(int number)
-		{
-			string result = string.Empty;
+    public static class Kata
+    {
+        public static string EvenOrOdd(int number)
+        {
+            string result = string.Empty;
 
-			bool isOdd = number % 2 == 0;
+            bool isOdd = number % 2 == 0;
 
-			switch (isOdd)
-			{
-				case true:
-					result = "Odd";
-					break;
+            switch (isOdd)
+            {
+                case true:
+                    result = "Odd";
+                    break;
 
-				case false:
-					result = "Even";
-					break;
-			}
+                case false:
+                    result = "Even";
+                    break;
+            }
 
-			return result;
-		}
-	}
+            return result;
+        }
+        public static string BoolToWord1(bool word)
+        {
+            
+            string text = word ? "Yes" : "No";
+            return text;
+        }
+    }
 }
