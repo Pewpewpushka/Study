@@ -8,6 +8,8 @@ namespace CodeWars
 {
     public static class Kata
     {
+
+
         public static string EvenOrOdd(int number)
         {
             string result = string.Empty;
@@ -29,9 +31,22 @@ namespace CodeWars
         }
         public static string BoolToWord1(bool word)
         {
-            
+
             string text = word ? "Yes" : "No";
             return text;
         }
+        public static int PositiveSum(int[] arr)
+        {
+            int result = 0;
+            foreach (int num in arr)
+            {
+                if (num > 0)
+                {
+                    result += num;
+                }
+            }
+            return result;
+        }
     }
+    
 }
