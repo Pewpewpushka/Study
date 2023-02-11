@@ -15,17 +15,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exception_and_nullable", "E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DI", "DI", "{A3BDB56C-EE58-4C29-957E-A018E1849939}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study5", "Study5\Study5.csproj", "{678A75E5-9BC8-46D0-8E4B-C268A5D60EC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study5", "Study5\Study5.csproj", "{678A75E5-9BC8-46D0-8E4B-C268A5D60EC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars", "CodeWars\CodeWars.csproj", "{E42360F8-F50C-4F17-B5F6-FC73A89D5A4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeWars", "CodeWars\CodeWars.csproj", "{E42360F8-F50C-4F17-B5F6-FC73A89D5A4F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Metanit", "Metanit", "{85DB543E-C4BE-455F-83DE-3977C2D9DD23}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{94AABF48-0860-42FC-857C-DA50963D4D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study6_Introduse_Scope", "Study6_Introduse_Scope\Study6_Introduse_Scope.csproj", "{F33E012F-952E-4A39-887B-4DCA827C16A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study6_Introduse_Scope", "Study6_Introduse_Scope\Study6_Introduse_Scope.csproj", "{F33E012F-952E-4A39-887B-4DCA827C16A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chemestry.Calcul.Polyol_and_isocyanate", "Chemestry.Calcul.Polyol_and_isocyanate\Chemestry.Calcul.Polyol_and_isocyanate.csproj", "{F95021D8-054E-4023-BF7D-3FB2E0F9C038}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chemestry.Calcul.Polyol_and_isocyanate", "Chemestry.Calcul.Polyol_and_isocyanate\Chemestry.Calcul.Polyol_and_isocyanate.csproj", "{F95021D8-054E-4023-BF7D-3FB2E0F9C038}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

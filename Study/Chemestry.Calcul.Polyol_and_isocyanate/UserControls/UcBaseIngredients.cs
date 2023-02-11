@@ -23,6 +23,7 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         {
             Polyol polyol1 = new Polyol() { Name = "Desmophen 41WB01", OHv = 37, Functions = 3 };
             polyols.Add(polyol1);
+            
 
 
 
