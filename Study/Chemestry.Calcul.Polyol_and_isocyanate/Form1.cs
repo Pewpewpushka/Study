@@ -11,7 +11,9 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate
 
         private void btRegin_Click(object sender, EventArgs e)
         {
-
+            ucBaseIngredients1.Hide();
+            ucElastic1.Hide();
+            uñRigin1.Show();
         }
 
         private void btElastic_Click(object sender, EventArgs e)
@@ -23,6 +25,9 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate
 
         private void btBaseIngrelients_Click(object sender, EventArgs e)
         {
+            uñRigin1.Hide();
+            ucElastic1.Hide();
+            ucBaseIngredients1.Show();
 
         }
     }
