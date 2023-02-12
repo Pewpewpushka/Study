@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CodeWars
 {
@@ -46,6 +47,24 @@ namespace CodeWars
                 }
             }
             return result;
+        }
+        public static string RepeatStr(int n, string s)
+        {
+            string res = "";
+            for (int i = 0; i < n; i++)
+            {
+                res += s;
+            }
+            return res;
+        }
+        public static string Remove_char(string s)
+        {
+            string result1 = "";
+            
+            result1 = s.Substring(1);
+            result1 = result1.Substring(0, result1.Length - 1);
+
+            return result1;
         }
     }
     
