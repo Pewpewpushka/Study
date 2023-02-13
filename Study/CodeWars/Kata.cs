@@ -60,12 +60,32 @@ namespace CodeWars
         public static string Remove_char(string s)
         {
             string result1 = "";
-            
+
             result1 = s.Substring(1);
             result1 = result1.Substring(0, result1.Length - 1);
 
             return result1;
         }
+        public static int FindSmallestInt(int[] args)
+        {
+            //int minElement = args[0];
+
+            //int minIndex = 0;
+
+            //for (int i = 1; i < args.Length; i++)
+            //{
+            //    if (args[i] < minElement)
+            //    {
+            //        minElement = args[i];
+
+            //        minIndex = i;
+            //    }
+            //}
+            //return minIndex;
+            
+            int minValue = args.Min();
+            return minValue;
+        }
+
     }
-    
 }

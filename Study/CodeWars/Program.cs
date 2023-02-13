@@ -8,8 +8,9 @@
 
 //string p = Kata.RepeatStr(3,"llll");
 //Console.WriteLine(p);
-string d = Kata.Remove_char("hello");
-Console.WriteLine(d);
+//string d = Kata.Remove_char("hello");
+//Console.WriteLine(d);
 
-
+int sumi = Kata.FindSmallestInt(new int[] { 1, 2, -3 });
+Console.WriteLine(sumi);
 
