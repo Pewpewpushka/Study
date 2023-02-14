@@ -83,8 +83,28 @@ namespace CodeWars
             //}
             //return minIndex;
             
+
             int minValue = args.Min();
             return minValue;
+        }
+        public static int SquareSum(int[] number)
+        {
+            int power = 2;
+            // возводим массив в степень
+            for (int i = 0; i < number.Length; i++)
+            {
+                number[i] = (int)Math.Pow(number[i], power);
+            }
+
+            // вычисляем сумму элементов
+            int sum = 0;
+            for (int i = 0; i < number.Length; i++)
+            {
+                sum += number[i];
+            }
+
+            return sum;
+
         }
 
     }

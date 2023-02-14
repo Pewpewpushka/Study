@@ -11,6 +11,9 @@
 //string d = Kata.Remove_char("hello");
 //Console.WriteLine(d);
 
-int sumi = Kata.FindSmallestInt(new int[] { 1, 2, -3 });
-Console.WriteLine(sumi);
+//int sumi = Kata.FindSmallestInt(new int[] { 1, 2, -3 });
+//Console.WriteLine(sumi);
 
+
+int sum =Kata.SquareSum(new int[] { 1, 2, 3 });
+Console.WriteLine(sum);
