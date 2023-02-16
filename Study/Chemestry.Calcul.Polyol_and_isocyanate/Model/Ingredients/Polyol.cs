@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-    public class Polyol
+    public class Polyol : IIngredients
     {
         /// <summary>
         /// Наименование
