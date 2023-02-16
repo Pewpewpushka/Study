@@ -18,6 +18,7 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
             InitializeComponent();
         }
         public List<Polyol> polyols= new List<Polyol>();
+        public List<BlowingAgents> blowingAgents= new List<BlowingAgents>();
 
         private void UcBaseIngredients_Load(object sender, EventArgs e)
         {
@@ -30,10 +31,16 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
             Polyol polyol4 = new Polyol() { Name = "Laprol", OHv = 37, Functions = 3 };
             polyols.Add(polyol4);
 
-
-
-
             dgvPoliols.DataSource = polyols;
+
+            BlowingAgents blowingAgents1 = new BlowingAgents() { Name = "Water", OHv = 1168, Functions = 3 };
+            blowingAgents.Add(blowingAgents1);
+
+            dgvBlowingagents.DataSource= blowingAgents;
+
+
+
+
                 /*
                  * Desmophen 41WB01	37	3
 Arcol 1108	48	3
