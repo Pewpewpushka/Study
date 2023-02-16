@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-     class Isocyanates
+     class Isocyanates : IIngredients
     {
 
         /// <summary>
@@ -16,5 +16,7 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
         public double NCO { get; set; }
         public double MW { get; set; }
         public double Viscosity25oC { get; set; }
+        public double OHv { get; set; }
+        public double Functions { get; set; }
     }
 }

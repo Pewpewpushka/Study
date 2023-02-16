@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-     class Silicones
+     class Silicones : IIngredients
     {
 
         /// <summary>
@@ -14,5 +14,8 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
         /// </summary>
         public string Name { get; set; }
         public double Viscosity25oC { get; set; }
+        public double OHv { get; set; }
+        public double Functions { get; set; }
+        public double MW { get; set; }
     }
 }

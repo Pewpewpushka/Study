@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-     class Staplers
+     class Staplers : IIngredients
     {
         /// <summary>
         /// Наименование
