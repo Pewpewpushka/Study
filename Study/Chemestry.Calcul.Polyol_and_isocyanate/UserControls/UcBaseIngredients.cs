@@ -19,6 +19,10 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         }
         public List<Polyol> polyols= new List<Polyol>();
         public List<BlowingAgents> blowingAgents= new List<BlowingAgents>();
+        public List<Cataliztions> cataliztions= new List<Cataliztions>();
+        public List<Isocyanates> isocyanates= new List<Isocyanates>();
+        public List<Silicones> silicones= new List<Silicones>();
+        public List<Staplers> staplers= new List<Staplers>();
 
         private void UcBaseIngredients_Load(object sender, EventArgs e)
         {
@@ -38,6 +42,24 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
 
             dgvBlowingagents.DataSource= blowingAgents;
 
+            Cataliztions cataliztions1 = new Cataliztions() { Name = "Catalizator 33", Viscosity25oC = 160 };
+            cataliztions.Add(cataliztions1);
+            dgvCatalizators.DataSource= cataliztions1;
+
+            Isocyanates isocyanates1 = new Isocyanates() { Name = "MDI", NCO= 31, Viscosity25oC = 160 };
+            isocyanates.Add(isocyanates1);
+            dgvIsocyanates.DataSource= isocyanates1;
+
+            Silicones silicones1 = new Silicones() { Name = "Пента 483", Viscosity25oC= 460 };
+            silicones.Add(silicones1);
+            dgrvSilicones.DataSource= silicones1;
+
+            Staplers staplers1 = new Staplers() { Name = "Catalizator 33", Viscosity25oC = 160 };
+            staplers.Add(staplers1);
+            dgvStaplers.DataSource= staplers1;
+
+
+
 
 
 
@@ -48,5 +70,7 @@ Arcol 1108	48	3
 
                  */
         }
+
+       
     }
 }
