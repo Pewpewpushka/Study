@@ -34,7 +34,7 @@ namespace CodeWars
             string b = "e";
             string c = "l";
             string d = "lo";
-            string e = "word";
+            string e = "world!";
             
             string[] values = { a, b, c, d };
             string result = string.Join("", values);
