@@ -1,3 +1,5 @@
-﻿
+﻿using CodeWars;
+
+Kata.Hello();
 
 
