@@ -106,6 +106,20 @@ namespace CodeWars
             return sum;
 
         }
+        public static string BooleanToString(bool b)
+        {
+            string result = string.Empty;
+           
+            if (b)
+            {
+                result = "True";
+            }
+            else
+            {
+                result = "False";
+            }
+            return result;
+        }
 
     }
 }
