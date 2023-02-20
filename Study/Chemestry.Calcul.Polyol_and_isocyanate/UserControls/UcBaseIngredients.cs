@@ -1,4 +1,5 @@
-﻿using Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients;
+﻿using Chemestry.Calcul.Polyol_and_isocyanate.Model;
+using Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,15 +18,20 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         {
             InitializeComponent();
         }
-        public List<Polyol> polyols= new List<Polyol>();
-        public List<BlowingAgents> blowingAgents= new List<BlowingAgents>();
-        public List<Cataliztions> cataliztions= new List<Cataliztions>();
-        public List<Isocyanates> isocyanates= new List<Isocyanates>();
-        public List<Silicones> silicones= new List<Silicones>();
-        public List<Staplers> staplers= new List<Staplers>();
+
+
+        public List<Polyol> polyols = new List<Polyol>();
+        public List<BlowingAgents> blowingAgents = new List<BlowingAgents>();
+        public List<Cataliztions> cataliztions = new List<Cataliztions>();
+        public List<Isocyanates> isocyanates = new List<Isocyanates>();
+        public List<Silicones> silicones = new List<Silicones>();
+        public List<Staplers> staplers = new List<Staplers>();
+
+
 
         private void UcBaseIngredients_Load(object sender, EventArgs e)
         {
+            #region 1. Polyols
             Polyol polyol1 = new Polyol() { Name = "Desmophen 41WB01", OHv = 37, Functions = 3 };
             polyols.Add(polyol1);
             Polyol polyol2 = new Polyol() { Name = "Arcol 1108", OHv = 48, Functions = 3 };
@@ -36,41 +42,44 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
             polyols.Add(polyol4);
 
             dgvPoliols.DataSource = polyols;
+            #endregion
 
+            #region 2. BlowingAgents
             BlowingAgents blowingAgents1 = new BlowingAgents() { Name = "Water", OHv = 1168, Functions = 3 };
             blowingAgents.Add(blowingAgents1);
 
-            dgvBlowingagents.DataSource= blowingAgents;
+            dgvBlowingagents.DataSource = blowingAgents;
 
+            #endregion
+
+            #region 3. Catalization
             Cataliztions cataliztions1 = new Cataliztions() { Name = "Catalizator 33", Viscosity25oC = 160 };
             cataliztions.Add(cataliztions1);
-            dgvCatalizators.DataSource= cataliztions1;
+            dgvCatalizators.DataSource = cataliztions;
+            #endregion
 
-            Isocyanates isocyanates1 = new Isocyanates() { Name = "MDI", NCO= 31, Viscosity25oC = 160 };
+            #region 4. Isocyanates
+            Isocyanates isocyanates1 = new Isocyanates() { Name = "MDI", NCO = 31, Viscosity25oC = 160 };
             isocyanates.Add(isocyanates1);
-            dgvIsocyanates.DataSource= isocyanates1;
+            dgvIsocyanates.DataSource = isocyanates;
 
-            Silicones silicones1 = new Silicones() { Name = "Пента 483", Viscosity25oC= 460 };
+            #endregion
+
+            #region 5. Silicones
+
+            Silicones silicones1 = new Silicones() { Name = "Пента 483", Viscosity25oC = 460 };
             silicones.Add(silicones1);
-            dgrvSilicones.DataSource= silicones1;
+            dgrvSilicones.DataSource = silicones;
+            #endregion
 
+            #region 6. Staplers
             Staplers staplers1 = new Staplers() { Name = "Catalizator 33", Viscosity25oC = 160 };
             staplers.Add(staplers1);
-            dgvStaplers.DataSource= staplers1;
+            dgvStaplers.DataSource = staplers;
 
-
-
-
-
-
-                /*
-                 * Desmophen 41WB01	37	3
-Arcol 1108	48	3
-Полиол 6003	27	5
-
-                 */
+            #endregion
         }
 
-       
+
     }
 }

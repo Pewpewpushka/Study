@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model
 {
-    internal interface IIngredients
+    public interface IIngredients
     {
+        public string Name { get; set; }
+        public double OHv { get; set; }
+        public double Functions { get; set; }
+        public double MW { get; set; }
+        public double Viscosity25oC { get; set; }
     }
 }
