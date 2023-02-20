@@ -15,5 +15,8 @@
 //Console.WriteLine(sumi);
 
 
-int sum =Kata.SquareSum(new int[] { 1, 2, 3 });
-Console.WriteLine(sum);
+//int sum =Kata.SquareSum(new int[] { 1, 2, 3 });
+//Console.WriteLine(sum);
+Kata.Greet("name11");
+Kata.summation(1);
+Console.ReadLine();

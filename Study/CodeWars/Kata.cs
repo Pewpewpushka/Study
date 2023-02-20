@@ -120,6 +120,26 @@ namespace CodeWars
             }
             return result;
         }
+        public static string Greet(string name)
+        { 
+            string result = "Hello,  how are you doing today?";
+            string substring = name;
+
+            result = result.Insert(7, substring);
+            Console.WriteLine(result); 
+            return result;
+            // return $"Hello, {name} how are you doing today?";
+        }
+        public static int summation(int num)
+        {
+            int result = 0;
+            for (int i = 1; i <= num; i++)
+            {
+                result += i;
+            }
+            Console.WriteLine(result);
+            return result;
+        }
 
     }
 }
