@@ -17,6 +17,11 @@
 
 //int sum =Kata.SquareSum(new int[] { 1, 2, 3 });
 //Console.WriteLine(sum);
-Kata.Greet("name11");
-Kata.summation(1);
+//Kata.Greet("name11");
+//Kata.summation(1);
+//Console.ReadLine();
+//bool[] sheeps = { true, false, true, false, };
+//Kata.CountSheeps(sheeps);
+//Console.ReadLine();
+Kata.basicOp('+', 3, 4);
 Console.ReadLine();

@@ -141,6 +141,48 @@ namespace CodeWars
             return result;
             //return num*(num+1)/2;
         }
+        public static int CountSheeps( bool[] sheeps)
+        {   
+            int result = 0;
+            for (int i =0; i < sheeps.Length;i++)
+            {
+                if (sheeps[i])
+                {
+                    result++;
+                }
+            }
+            Console.WriteLine(result);
+            return result;
+            //int count = 0;
+            //foreach (bool sheep in sheeps)
+            //{
+            //    if (sheep) count++;
+            //}
+            //return count;
+        }
+        public static double basicOp(char operation, double value1, double value2)
+        {
+            double result = 0;
 
+            switch (operation)
+            {
+                case '+':
+                    result = value1 + value2;
+                    break;
+                case '-':
+                    result = value1 - value2;
+                    break;
+                case '*':
+                    result = value1 * value2;
+                    break;
+                case '/':
+                    result = value1 / value2;
+                    break;
+                
+                   
+            }
+            Console.WriteLine(result);
+            return result;
+        }
     }
 }
