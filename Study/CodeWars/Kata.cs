@@ -139,6 +139,7 @@ namespace CodeWars
             }
             Console.WriteLine(result);
             return result;
+            //return num*(num+1)/2;
         }
 
     }
