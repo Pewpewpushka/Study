@@ -23,5 +23,6 @@
 //bool[] sheeps = { true, false, true, false, };
 //Kata.CountSheeps(sheeps);
 //Console.ReadLine();
-Kata.basicOp('+', 3, 4);
-Console.ReadLine();
+//Kata.basicOp('+', 3, 4);
+//Console.ReadLine();
+Kata.СenturyFromYear(1705);

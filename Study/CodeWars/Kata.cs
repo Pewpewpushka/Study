@@ -192,5 +192,11 @@ namespace CodeWars
             //}
             //return 0;
         }
+        public static int СenturyFromYear(int year)
+        {  int result = 0;
+            result = year / 100 + 1;
+            Console.WriteLine(result);
+            return result;
+        }
     }
 }
