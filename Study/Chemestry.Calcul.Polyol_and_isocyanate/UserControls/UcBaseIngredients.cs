@@ -38,14 +38,14 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
             polyols.Add(polyol2);
             Polyol polyol3 = new Polyol() { Name = "Laprol 6003", OHv = 27, Functions = 5 };
             polyols.Add(polyol3);
-            Polyol polyol4 = new Polyol() { Name = "Laprol", OHv = 37, Functions = 3 };
+            Polyol polyol4 = new Polyol() { Name = "Laprol 5003", OHv = 32, Functions = 6 };
             polyols.Add(polyol4);
 
             dgvPoliols.DataSource = polyols;
             #endregion
 
             #region 2. BlowingAgents
-            BlowingAgents blowingAgents1 = new BlowingAgents() { Name = "Water", OHv = 1168, Functions = 3 };
+            BlowingAgents blowingAgents1 = new BlowingAgents() { Name = "Water", OHv = 6233, Functions = 2 };
             blowingAgents.Add(blowingAgents1);
 
             dgvBlowingagents.DataSource = blowingAgents;
@@ -67,19 +67,49 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
 
             #region 5. Silicones
 
-            Silicones silicones1 = new Silicones() { Name = "Пента 483", Viscosity25oC = 460 };
+            Silicones silicones1 = new Silicones() { Name = "NIAX Silicone L-417", Viscosity25oC = 600 };
             silicones.Add(silicones1);
+            Silicones silicones2 = new Silicones() { Name = "NIAX Silicone L-590", Viscosity25oC = 740 };
+            silicones.Add(silicones2);
             dgrvSilicones.DataSource = silicones;
             #endregion
 
             #region 6. Staplers
-            Staplers staplers1 = new Staplers() { Name = "Catalizator 33", Viscosity25oC = 160 };
+            Staplers staplers1 = new Staplers() { Name = "TELA", Viscosity25oC = 160 };
             staplers.Add(staplers1);
             dgvStaplers.DataSource = staplers;
 
             #endregion
         }
 
+        private void dgvPoliols_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void dgvCatalizators_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvStaplers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgrvSilicones_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvIsocyanates_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvBlowingagents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
