@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chemestry.Calcul.Polyol_and_isocyanate.Model.Ingredients
 {
-     class Cataliztions : IIngredients
+     public class Cataliztions : IIngredients
     {
         /// <summary>
         /// Наименование катализатора

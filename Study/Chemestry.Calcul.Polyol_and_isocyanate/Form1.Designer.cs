@@ -29,12 +29,12 @@
 		private void InitializeComponent()
 		{
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uсRigin1 = new Chemestry.Calcul.Polyol_and_isocyanate.UserControls.UсRigin();
+            this.ucElastic1 = new Chemestry.Calcul.Polyol_and_isocyanate.UserControls.UcElastic();
             this.ucBaseIngredients1 = new Chemestry.Calcul.Polyol_and_isocyanate.UserControls.UcBaseIngredients();
             this.btElastic = new System.Windows.Forms.Button();
             this.btRegin = new System.Windows.Forms.Button();
             this.btBaseIngrelients = new System.Windows.Forms.Button();
-            this.ucElastic1 = new Chemestry.Calcul.Polyol_and_isocyanate.UserControls.UcElastic();
-            this.uсRigin1 = new Chemestry.Calcul.Polyol_and_isocyanate.UserControls.UсRigin();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,17 +44,33 @@
             this.panel1.Controls.Add(this.ucElastic1);
             this.panel1.Controls.Add(this.ucBaseIngredients1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(209, 0);
+            this.panel1.Location = new System.Drawing.Point(199, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 710);
+            this.panel1.Size = new System.Drawing.Size(1231, 862);
             this.panel1.TabIndex = 0;
+            // 
+            // uсRigin1
+            // 
+            this.uсRigin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uсRigin1.Location = new System.Drawing.Point(0, 0);
+            this.uсRigin1.Name = "uсRigin1";
+            this.uсRigin1.Size = new System.Drawing.Size(1231, 862);
+            this.uсRigin1.TabIndex = 2;
+            // 
+            // ucElastic1
+            // 
+            this.ucElastic1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucElastic1.Location = new System.Drawing.Point(0, 0);
+            this.ucElastic1.Name = "ucElastic1";
+            this.ucElastic1.Size = new System.Drawing.Size(1231, 862);
+            this.ucElastic1.TabIndex = 1;
             // 
             // ucBaseIngredients1
             // 
             this.ucBaseIngredients1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucBaseIngredients1.Location = new System.Drawing.Point(0, 0);
             this.ucBaseIngredients1.Name = "ucBaseIngredients1";
-            this.ucBaseIngredients1.Size = new System.Drawing.Size(1038, 710);
+            this.ucBaseIngredients1.Size = new System.Drawing.Size(1231, 862);
             this.ucBaseIngredients1.TabIndex = 0;
             // 
             // btElastic
@@ -87,27 +103,11 @@
             this.btBaseIngrelients.UseVisualStyleBackColor = true;
             this.btBaseIngrelients.Click += new System.EventHandler(this.btBaseIngrelients_Click);
             // 
-            // ucElastic1
-            // 
-            this.ucElastic1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucElastic1.Location = new System.Drawing.Point(0, 0);
-            this.ucElastic1.Name = "ucElastic1";
-            this.ucElastic1.Size = new System.Drawing.Size(1038, 710);
-            this.ucElastic1.TabIndex = 1;
-            // 
-            // uсRigin1
-            // 
-            this.uсRigin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uсRigin1.Location = new System.Drawing.Point(0, 0);
-            this.uсRigin1.Name = "uсRigin1";
-            this.uсRigin1.Size = new System.Drawing.Size(1038, 710);
-            this.uсRigin1.TabIndex = 2;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1247, 710);
+            this.ClientSize = new System.Drawing.Size(1430, 862);
             this.Controls.Add(this.btBaseIngrelients);
             this.Controls.Add(this.btRegin);
             this.Controls.Add(this.btElastic);
