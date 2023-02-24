@@ -50,13 +50,14 @@
             // 
             // dgvPoliols
             // 
+            this.dgvPoliols.AllowUserToAddRows = false;
             this.dgvPoliols.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPoliols.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPoliols.Location = new System.Drawing.Point(15, 26);
             this.dgvPoliols.Name = "dgvPoliols";
             this.dgvPoliols.RowHeadersVisible = false;
             this.dgvPoliols.RowHeadersWidth = 51;
-            this.dgvPoliols.Size = new System.Drawing.Size(486, 184);
+            this.dgvPoliols.Size = new System.Drawing.Size(501, 184);
             this.dgvPoliols.TabIndex = 0;
             this.dgvPoliols.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPoliols_CellContentClick);
             // 
@@ -73,19 +74,19 @@
             // 
             this.dgvBlowingagents.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBlowingagents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBlowingagents.Location = new System.Drawing.Point(536, 26);
+            this.dgvBlowingagents.Location = new System.Drawing.Point(591, 26);
             this.dgvBlowingagents.Name = "dgvBlowingagents";
             this.dgvBlowingagents.RowHeadersVisible = false;
             this.dgvBlowingagents.RowHeadersWidth = 51;
             this.dgvBlowingagents.RowTemplate.Height = 29;
-            this.dgvBlowingagents.Size = new System.Drawing.Size(622, 190);
+            this.dgvBlowingagents.Size = new System.Drawing.Size(501, 184);
             this.dgvBlowingagents.TabIndex = 2;
             this.dgvBlowingagents.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBlowingagents_CellContentClick);
             // 
             // Вспениватели
             // 
             this.Вспениватели.AutoSize = true;
-            this.Вспениватели.Location = new System.Drawing.Point(536, 3);
+            this.Вспениватели.Location = new System.Drawing.Point(591, 3);
             this.Вспениватели.Name = "Вспениватели";
             this.Вспениватели.Size = new System.Drawing.Size(169, 20);
             this.Вспениватели.TabIndex = 3;
@@ -93,6 +94,7 @@
             // 
             // dgvCatalizators
             // 
+            this.dgvCatalizators.AllowUserToAddRows = false;
             this.dgvCatalizators.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCatalizators.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCatalizators.Location = new System.Drawing.Point(15, 233);
@@ -100,7 +102,7 @@
             this.dgvCatalizators.RowHeadersVisible = false;
             this.dgvCatalizators.RowHeadersWidth = 51;
             this.dgvCatalizators.RowTemplate.Height = 29;
-            this.dgvCatalizators.Size = new System.Drawing.Size(486, 194);
+            this.dgvCatalizators.Size = new System.Drawing.Size(501, 184);
             this.dgvCatalizators.TabIndex = 4;
             this.dgvCatalizators.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCatalizators_CellContentClick);
             // 
@@ -115,21 +117,22 @@
             // 
             // dgvIsocyanates
             // 
+            this.dgvIsocyanates.AllowUserToAddRows = false;
             this.dgvIsocyanates.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvIsocyanates.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvIsocyanates.Location = new System.Drawing.Point(536, 242);
+            this.dgvIsocyanates.Location = new System.Drawing.Point(591, 233);
             this.dgvIsocyanates.Name = "dgvIsocyanates";
             this.dgvIsocyanates.RowHeadersVisible = false;
             this.dgvIsocyanates.RowHeadersWidth = 51;
             this.dgvIsocyanates.RowTemplate.Height = 29;
-            this.dgvIsocyanates.Size = new System.Drawing.Size(622, 188);
+            this.dgvIsocyanates.Size = new System.Drawing.Size(501, 184);
             this.dgvIsocyanates.TabIndex = 6;
             this.dgvIsocyanates.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvIsocyanates_CellContentClick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(549, 219);
+            this.label3.Location = new System.Drawing.Point(591, 213);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 20);
             this.label3.TabIndex = 7;
@@ -137,21 +140,22 @@
             // 
             // dgrvSilicones
             // 
+            this.dgrvSilicones.AllowUserToAddRows = false;
             this.dgrvSilicones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgrvSilicones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrvSilicones.Location = new System.Drawing.Point(536, 472);
+            this.dgrvSilicones.Location = new System.Drawing.Point(591, 469);
             this.dgrvSilicones.Name = "dgrvSilicones";
             this.dgrvSilicones.RowHeadersVisible = false;
             this.dgrvSilicones.RowHeadersWidth = 51;
             this.dgrvSilicones.RowTemplate.Height = 29;
-            this.dgrvSilicones.Size = new System.Drawing.Size(622, 234);
+            this.dgrvSilicones.Size = new System.Drawing.Size(501, 184);
             this.dgrvSilicones.TabIndex = 8;
             this.dgrvSilicones.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrvSilicones_CellContentClick);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(554, 449);
+            this.label4.Location = new System.Drawing.Point(591, 446);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
             this.label4.TabIndex = 9;
@@ -159,6 +163,7 @@
             // 
             // dgvStaplers
             // 
+            this.dgvStaplers.AllowUserToAddRows = false;
             this.dgvStaplers.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStaplers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvStaplers.Location = new System.Drawing.Point(12, 469);
@@ -166,7 +171,7 @@
             this.dgvStaplers.RowHeadersVisible = false;
             this.dgvStaplers.RowHeadersWidth = 51;
             this.dgvStaplers.RowTemplate.Height = 29;
-            this.dgvStaplers.Size = new System.Drawing.Size(489, 234);
+            this.dgvStaplers.Size = new System.Drawing.Size(501, 184);
             this.dgvStaplers.TabIndex = 10;
             this.dgvStaplers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaplers_CellContentClick);
             // 
