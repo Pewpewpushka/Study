@@ -198,5 +198,39 @@ namespace CodeWars
             Console.WriteLine(result);
             return result;
         }
+        public static int Litres(double time)
+        {
+            int result =(int)time/2;
+            Console.WriteLine(result);
+            return result;
+        }
+        public static long[] Digitize(long n)
+        {
+            // Преобразуем число n в массив символов
+            char[] result = n.ToString().ToCharArray();
+
+            // Создаем новый массив, который будет содержать цифры в обратном порядке
+            long[] reversed = new long[result.Length];
+
+            // Копируем цифры из исходного массива в новый массив в обратном порядке
+            for (int i = 0; i < result.Length; i++)
+            {
+                reversed[i] = long.Parse(result[result.Length - i - 1].ToString());
+            }
+            //Console.WriteLine(reversed);
+            // Возвращаем массив цифр в обратном порядке
+            return reversed;
+            //string nstring = n.ToString();
+            //long[] schlong = new long[nstring.Length];
+
+            //for (int i = 0; i < nstring.Length; i++)
+            //{
+            //    string b = nstring[nstring.Length - i - 1].ToString();
+            //    long a = Int64.Parse(b);
+            //    schlong[i] = a;
+            //}
+            //return schlong;
+
+        }
     }
 }

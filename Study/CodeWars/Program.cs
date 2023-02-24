@@ -25,4 +25,8 @@
 //Console.ReadLine();
 //Kata.basicOp('+', 3, 4);
 //Console.ReadLine();
-Kata.СenturyFromYear(1705);
+//Kata.СenturyFromYear(1705);
+//Kata.Litres(23);
+long n = 123456789;
+long[] reversed = Kata.Digitize(n);
+Console.ReadLine();
