@@ -217,7 +217,7 @@ namespace CodeWars
             {
                 reversed[i] = long.Parse(result[result.Length - i - 1].ToString());
             }
-            //Console.WriteLine(reversed);
+            Console.WriteLine(reversed);
             // Возвращаем массив цифр в обратном порядке
             return reversed;
             //string nstring = n.ToString();
