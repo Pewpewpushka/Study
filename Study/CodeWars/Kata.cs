@@ -232,5 +232,28 @@ namespace CodeWars
             //return schlong;
 
         }
+        public static int[] Maps(int[] x)
+        {
+            
+            for (int i = 0; i < x.Length; i++)
+            {
+                x[i] = x[i] * 2;
+                Console.WriteLine(x[i]);
+            }
+            return x;
+        }
+        public static string AbbrevName(string name)
+        {
+            string[] words = name.Split(' ');
+            string initials = "";
+            foreach (string word in words)
+            {
+                initials += word[0].ToString().ToUpper();
+            }
+           
+            return initials[0] + "." + initials[1];
+
+
+        }
     }
 }
