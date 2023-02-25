@@ -243,16 +243,26 @@ namespace CodeWars
             return x;
         }
         public static string AbbrevName(string name)
-        {
+        {   //разделяем на два слова с помощью пробела
             string[] words = name.Split(' ');
             string initials = "";
+            //затем проходит в цикле через каждое слово, извлекает первую букву и делает ее заглавной.
             foreach (string word in words)
             {
                 initials += word[0].ToString().ToUpper();
             }
-           
+            //объединяем две начальные буквы точкой между ними и возвращает результат.
             return initials[0] + "." + initials[1];
 
+            //string[] buf = name.Split(' ');
+
+            //var firstName = buf.First();
+            //var lastName = buf.Last();
+
+            //var oneUpper = Char.ToUpper(firstName.First());
+            //var twoUpper = Char.ToUpper(lastName.First());
+
+            //return $"{oneUpper}.{twoUpper}";
 
         }
     }
