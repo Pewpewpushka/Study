@@ -15,6 +15,8 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         public UcElastic()
         {
             InitializeComponent();
+
         }
+
     }
 }
