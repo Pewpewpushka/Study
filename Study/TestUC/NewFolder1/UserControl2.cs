@@ -8,18 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
+namespace TestUC.NewFolder1
 {
-    public partial class UcElastic : UserControl
+    public partial class UserControl2 : UserControl
     {
-        public UcElastic()
+        public UserControl2()
         {
             InitializeComponent();
         }
+        public string MyProperty { get; set; }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            var mainForm = (Form1)this.ParentForm;
+            textBox1.Text = mainForm.MyProperty;
         }
     }
 }

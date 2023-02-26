@@ -27,6 +27,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study6_Introduse_Scope", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chemestry.Calcul.Polyol_and_isocyanate", "Chemestry.Calcul.Polyol_and_isocyanate\Chemestry.Calcul.Polyol_and_isocyanate.csproj", "{F95021D8-054E-4023-BF7D-3FB2E0F9C038}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tresh", "tresh", "{1A14EF7B-A150-479A-B8C5-F393C09447FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUC", "TestUC\TestUC.csproj", "{367EAA8B-DC54-4D43-BA00-6B40837D3FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,10 @@ Global
 		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F95021D8-054E-4023-BF7D-3FB2E0F9C038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{367EAA8B-DC54-4D43-BA00-6B40837D3FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{367EAA8B-DC54-4D43-BA00-6B40837D3FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{367EAA8B-DC54-4D43-BA00-6B40837D3FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{367EAA8B-DC54-4D43-BA00-6B40837D3FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +91,7 @@ Global
 		{678A75E5-9BC8-46D0-8E4B-C268A5D60EC0} = {A3BDB56C-EE58-4C29-957E-A018E1849939}
 		{94AABF48-0860-42FC-857C-DA50963D4D9F} = {85DB543E-C4BE-455F-83DE-3977C2D9DD23}
 		{F33E012F-952E-4A39-887B-4DCA827C16A6} = {A3BDB56C-EE58-4C29-957E-A018E1849939}
+		{367EAA8B-DC54-4D43-BA00-6B40837D3FA5} = {1A14EF7B-A150-479A-B8C5-F393C09447FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9A6A1EE9-704A-4A50-9BE6-A141F67B3AD2}
