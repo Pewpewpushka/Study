@@ -82,7 +82,7 @@ namespace CodeWars
             //    }
             //}
             //return minIndex;
-            
+
 
             int minValue = args.Min();
             return minValue;
@@ -109,7 +109,7 @@ namespace CodeWars
         public static string BooleanToString(bool b)
         {
             string result = string.Empty;
-           
+
             if (b)
             {
                 result = "True";
@@ -121,12 +121,12 @@ namespace CodeWars
             return result;
         }
         public static string Greet(string name)
-        { 
+        {
             string result = "Hello,  how are you doing today?";
             string substring = name;
 
             result = result.Insert(7, substring);
-            Console.WriteLine(result); 
+            Console.WriteLine(result);
             return result;
             // return $"Hello, {name} how are you doing today?";
         }
@@ -141,10 +141,10 @@ namespace CodeWars
             return result;
             //return num*(num+1)/2;
         }
-        public static int CountSheeps( bool[] sheeps)
-        {   
+        public static int CountSheeps(bool[] sheeps)
+        {
             int result = 0;
-            for (int i =0; i < sheeps.Length;i++)
+            for (int i = 0; i < sheeps.Length; i++)
             {
                 if (sheeps[i])
                 {
@@ -178,8 +178,8 @@ namespace CodeWars
                 case '/':
                     result = value1 / value2;
                     break;
-                
-                   
+
+
             }
             Console.WriteLine(result);
             return result;
@@ -193,14 +193,15 @@ namespace CodeWars
             //return 0;
         }
         public static int СenturyFromYear(int year)
-        {  int result = 0;
+        {
+            int result = 0;
             result = year / 100 + 1;
             Console.WriteLine(result);
             return result;
         }
         public static int Litres(double time)
         {
-            int result =(int)time/2;
+            int result = (int)time / 2;
             Console.WriteLine(result);
             return result;
         }
@@ -234,7 +235,7 @@ namespace CodeWars
         }
         public static int[] Maps(int[] x)
         {
-            
+
             for (int i = 0; i < x.Length; i++)
             {
                 x[i] = x[i] * 2;
@@ -267,12 +268,12 @@ namespace CodeWars
         }
         public static bool lovefunc(int flower1, int flower2)
         {
-            
-            if (flower1<flower2|| flower2<flower1)
+
+            if (flower1 < flower2 || flower2 < flower1)
             {
                 return true;
             }
-            else if (flower1>flower2 || flower2>flower1)
+            else if (flower1 > flower2 || flower2 > flower1)
             {
                 return false;
             }
@@ -286,7 +287,25 @@ namespace CodeWars
                 return false;
             }
 
-             return true;
+            return true;
+            //if (flower1 % 2 == 0 && flower2 % 2 != 0)  // flower1 has even number of petals and flower2 has odd number of petals
+            //{
+            //    return true;  // they are in love
+            //}
+            //else if (flower1 % 2 != 0 && flower2 % 2 == 0)  // flower1 has odd number of petals and flower2 has even number of petals
+            //{
+            //    return true;  // they are in love
+            //}
+            //else
+            //{
+            //    return false;  // they are not in love
+            //}
+
+            //return flower1 % 2 != flower2 % 2;
+
+            // return (f1+f2)%2==1;
+
+
 
         }
     }
