@@ -16,12 +16,13 @@ namespace TestUC.NewFolder1
         {
             InitializeComponent();
         }
-        
+        public delegate void UserControlEventHandler(object sender, string value);
+        public event UserControlEventHandler UserControlValueChanged;
+
         private void textBox1_TextChanged(object sender, EventArgs e)
        {
-            var mainForm = (Form1)this.ParentForm;
-            mainForm.Text = textBox1.Text;
-            
+            UserControlValueChanged?.Invoke(this, textBox1.Text);
+
         }
     }
 }
