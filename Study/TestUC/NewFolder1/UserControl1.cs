@@ -18,7 +18,7 @@ namespace TestUC.NewFolder1
         }
         
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+       {
             var mainForm = (Form1)this.ParentForm;
             mainForm.Text = textBox1.Text;
             
