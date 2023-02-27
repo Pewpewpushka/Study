@@ -38,7 +38,6 @@
             // 
             this.userControl21.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.userControl21.Location = new System.Drawing.Point(845, 137);
-            
             this.userControl21.Name = "userControl21";
             this.userControl21.Size = new System.Drawing.Size(506, 300);
             this.userControl21.TabIndex = 1;
@@ -47,6 +46,7 @@
             // 
             this.userControl11.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.userControl11.Location = new System.Drawing.Point(154, 115);
+            this.userControl11.MyPropertyText = "кнопкашмпока";
             this.userControl11.Name = "userControl11";
             this.userControl11.Size = new System.Drawing.Size(637, 400);
             this.userControl11.TabIndex = 0;
@@ -57,6 +57,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(263, 22);
             this.textBox1.TabIndex = 2;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 

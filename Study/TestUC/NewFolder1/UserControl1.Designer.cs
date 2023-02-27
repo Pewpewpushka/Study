@@ -37,7 +37,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 22);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "кнопкашмопка";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // UserControl1
@@ -48,6 +47,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "UserControl1";
             this.Size = new System.Drawing.Size(637, 400);
+            this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
