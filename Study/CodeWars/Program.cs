@@ -32,6 +32,8 @@
 //Console.ReadLine();
 //int[] x = { 1, 2, 3, 4, 5, 6, 7, };
 //Kata.Maps(x);
-string name = "Misha Iliyn";
-string initials = Kata.AbbrevName(name);
-Console.WriteLine(initials);
+//string name = "Misha Iliyn";
+//string initials = Kata.AbbrevName(name);
+//Console.WriteLine(initials);
+bool love =Kata.lovefunc(1, 0);
+Console.WriteLine(love);

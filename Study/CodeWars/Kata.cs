@@ -265,5 +265,29 @@ namespace CodeWars
             //return $"{oneUpper}.{twoUpper}";
 
         }
+        public static bool lovefunc(int flower1, int flower2)
+        {
+            
+            if (flower1<flower2|| flower2<flower1)
+            {
+                return true;
+            }
+            else if (flower1>flower2 || flower2>flower1)
+            {
+                return false;
+            }
+            else if (flower1 == flower2 || flower2 > flower1)
+            {
+                return false;
+
+            }
+            else
+            {
+                return false;
+            }
+
+             return true;
+
+        }
     }
 }
