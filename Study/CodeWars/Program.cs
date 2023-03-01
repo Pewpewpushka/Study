@@ -35,5 +35,10 @@
 //string name = "Misha Iliyn";
 //string initials = Kata.AbbrevName(name);
 //Console.WriteLine(initials);
-bool love =Kata.lovefunc(1, 0);
-Console.WriteLine(love);
+//bool love =Kata.lovefunc(1, 0);
+//Console.WriteLine(love);
+//double[] array = { 34, 76, 45 };
+//Kata.SumArray(array);
+
+var result = Kata.IsCube(23, 34);
+Console.WriteLine(result);

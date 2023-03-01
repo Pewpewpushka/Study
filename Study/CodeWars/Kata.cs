@@ -308,5 +308,48 @@ namespace CodeWars
 
 
         }
+        // найти суммму массива и  при значении 0 , вернуть 0ж
+        public static double SumArray(double[] array)
+        {
+            double result = 0;
+            foreach (double num in array)
+            {
+                if (double.IsNaN(num) || double.IsInfinity(num))
+                {
+                    
+                    continue;
+                }
+                result += num;
+            }
+            Console.WriteLine(result);
+            return result;
+            //double result = 0;
+            //if (array == null || array.Length == 0) return result;
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    result += array[i];
+            //}
+            //return result;
+
+            //return array.Sum();
+
+        }
+        // найти объем куба, если стороны равны то true и eсли стороны равны 0 то false
+        public static bool IsCube(double volume, double side)
+        {
+            if (side <= 0)
+                return false;
+            else
+            {
+                double volume2 = Math.Pow(side, 3);
+                if (volume == volume2)
+                    return true;
+                else
+                    return false;
+            }
+            return false;
+        }
+       
+
     }
 }
