@@ -22,16 +22,17 @@ namespace TestUC
             Binding binding = new Binding("Text", bindingSource, "MyPropertyText");
             textBox1.DataBindings.Add(binding);
         }
-        //UserControl1.UserControlValueChanged += UserControl1_UserControlValueChanged;
-
+        
+        public string TextFromForm { get => textBox1.Text; set => textBox1.Text = value; }
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+            this.userControl21.MyPropertyText = TextFromForm;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-      {
-            //userControl11.Text = textBox1.Text;
-            //this.userControl11.MyPropertyText= textBox1.Text;
-        }
+       
+
+       
+
     }
 }

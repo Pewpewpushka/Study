@@ -18,19 +18,14 @@ namespace TestUC.NewFolder1
         {
             InitializeComponent();
         }
-        //public delegate void UserControlEventHandler(object sender, string value);
-        //public event UserControlEventHandler UserControlValueChanged;
+        
         public string MyPropertyText { get => textBox1.Text; set => textBox1.Text = value; }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-            //UserControlValueChanged?.Invoke(this, MyPropertyText);
-        }
+      
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
             textBox1.Text = "кнопкашмпока";
-            //UserControlValueChanged?.Invoke(this, MyPropertyText);
+            
 
         }
     }
