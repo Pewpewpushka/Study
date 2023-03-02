@@ -18,9 +18,6 @@ namespace TestUC.NewFolder1
         }
 
         public string MyPropertyText { get => textBox1.Text; set => textBox1.Text = value; }
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }

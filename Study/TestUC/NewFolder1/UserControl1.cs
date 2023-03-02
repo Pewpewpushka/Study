@@ -24,7 +24,7 @@ namespace TestUC.NewFolder1
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            textBox1.Text = "кнопкашмпока";
+            MyPropertyText = "кнопкашмпока";
             
 
         }
