@@ -18,16 +18,23 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
             InitializeComponent();
         }
         public List<Polyol> Polyols { get; set; }
+        public List<BlowingAgents> BlowingAgents { get; set; }
+        public List<Cataliztions> Cataliztions { get; set; }
+        public List<Isocyanates> Isocyanates { get; set; }
+        public List<Silicones> Silicones { get; set; }
+        public List<Staplers> Staplers { get; set; }
         private void button1_Click(object sender, EventArgs e)
         {
             //textBox1.Text= Polyols
             string result = string.Empty;
-            for (int i = 0; i < Polyols.Count-1; i++)
+            for (int i = 0; i < Isocyanates.Count-1; i++)
             {
-                result += Polyols[i].Name + Environment.NewLine;
+                result += Isocyanates[i].Name + Environment.NewLine;
 
             }
             textBox1.Text = result;
+            
+
         }
     }
 }

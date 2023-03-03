@@ -27,7 +27,7 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         public List<Silicones> silicones = new List<Silicones>();
         public List<Staplers> staplers = new List<Staplers>();
 
-
+        public List<BlowingAgents> BlowingAgents { get; internal set; }
 
         private void UcBaseIngredients_Load(object sender, EventArgs e)
         {

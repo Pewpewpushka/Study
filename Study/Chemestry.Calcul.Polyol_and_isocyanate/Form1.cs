@@ -39,6 +39,11 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate
         private void Form1_Load(object sender, EventArgs e)
         {
             this.ucElastic1.Polyols = this.ucBaseIngredients1.polyols;
-        }
+            this.ucElastic1.BlowingAgents = this.ucBaseIngredients1.blowingAgents;
+            this.ucElastic1.Cataliztions = this.ucBaseIngredients1.cataliztions;
+            this.ucElastic1.Isocyanates = this.ucBaseIngredients1.isocyanates;
+            this.ucElastic1.Silicones = this.ucBaseIngredients1.silicones;
+            this.ucElastic1.Staplers = this.ucBaseIngredients1.staplers;
+        }   
     }
 }
