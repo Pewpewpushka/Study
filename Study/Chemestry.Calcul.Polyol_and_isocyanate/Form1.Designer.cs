@@ -56,6 +56,7 @@
             this.uсRigin1.Name = "uсRigin1";
             this.uсRigin1.Size = new System.Drawing.Size(1231, 862);
             this.uсRigin1.TabIndex = 2;
+            this.uсRigin1.Load += new System.EventHandler(this.uсRigin1_Load);
             // 
             // ucElastic1
             // 
@@ -114,6 +115,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

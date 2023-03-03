@@ -30,5 +30,15 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate
             ucBaseIngredients1.Show();
 
         }
+
+        private void uñRigin1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.ucElastic1.Polyols = this.ucBaseIngredients1.polyols;
+        }
     }
 }
