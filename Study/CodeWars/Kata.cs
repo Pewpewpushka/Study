@@ -351,5 +351,23 @@ namespace CodeWars
         }
         //return volume == side*side*side && volume >0 && side>0 ? true : false;
 
+        //добавить в массив такое же количество исмволов только если + то -
+        public static int[] InvertValues(int[] input)
+        {     int[] result = new int[input.Length];
+            for (int i = 0; i < input.Length; i++)
+                {
+                result[i] = -input[i];
+                }
+                return result;
+
+        }
+        //for (int i = 0; i < input.Count(); i++) input[i] *= -1;
+        //    return input;
+
+        //for (int i = 0; i < input.Length; i++)
+        //{
+        //    input[i] = input[i] * -1;
+        //}
+        //return input;
     }
 }

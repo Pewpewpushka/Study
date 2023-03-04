@@ -40,5 +40,13 @@
 //double[] array = { 34, 76, 45 };
 //Kata.SumArray(array);
 
-var result = Kata.IsCube(23, 34);
-Console.WriteLine(result);
+//var result = Kata.IsCube(23, 34);
+//Console.WriteLine(result);
+
+int[] numbers = { 1, 2, 3, -4, -5 };
+int[] inverses = Kata.InvertValues(numbers);
+Console.WriteLine("Inverted values:");
+for (int i = 0; i < inverses.Length; i++)
+{
+    Console.WriteLine(inverses[i]);
+}
