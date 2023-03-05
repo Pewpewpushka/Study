@@ -25,14 +25,14 @@ namespace Chemestry.Calcul.Polyol_and_isocyanate.UserControls
         public List<Staplers> Staplers { get; set; }
         private void button1_Click(object sender, EventArgs e)
         {
-            //textBox1.Text= Polyols
-            string result = string.Empty;
-            for (int i = 0; i < Isocyanates.Count-1; i++)
-            {
-                result += Isocyanates[i].Name + Environment.NewLine;
+            ////textBox1.Text= Polyols
+            //string result = string.Empty;
+            //for (int i = 0; i < BlowingAgents.Count; i++)
+            //{
+            //    result += BlowingAgents[i].Name + Environment.NewLine;
 
-            }
-            textBox1.Text = result;
+            //}
+            //textBox1.Text = result;
             
 
         }
