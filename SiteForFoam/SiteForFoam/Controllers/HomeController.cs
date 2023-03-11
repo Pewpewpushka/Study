@@ -7,13 +7,15 @@ namespace SiteForFoam.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration Configuration;
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            Configuration = configuration;
         }
         public IActionResult PrintInfo()
         {
+            var adminName = Configuration.GetSection("Admin:Name");
             return View();
         }
 
