@@ -369,6 +369,7 @@ namespace CodeWars
         //    input[i] = input[i] * -1;
         //}
         //return input;
+        //функцию, которая принимает строку скобок и определяет, допустим ли порядок скобок. Функция должна возвращать true, если строка допустима, и false, если она недействительна.
         public static bool ValidParentheses(string input)
         {
             Stack<char> stack = new Stack<char>();

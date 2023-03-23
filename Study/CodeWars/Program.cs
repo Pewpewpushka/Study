@@ -50,6 +50,7 @@
 //{
 //    Console.WriteLine(inverses[i]);
 //}
+//которая принимает строку скобок и определяет, допустим ли порядок скобок
 string input = "(())((()())())";
 bool result = Kata.ValidParentheses(input);
 Console.WriteLine(result);
