@@ -369,5 +369,30 @@ namespace CodeWars
         //    input[i] = input[i] * -1;
         //}
         //return input;
+        public static bool ValidParentheses(string input)
+        {
+            Stack<char> stack = new Stack<char>();
+
+            foreach (char c in input)
+            {
+                if (c == '(')
+                {
+                    stack.Push(c);
+                }
+                else if (c == ')')
+                {
+                    if (stack.Count == 0 || stack.Pop() != '(')
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return stack.Count == 0;
+
+
+            
+        }
     }
+
 }
