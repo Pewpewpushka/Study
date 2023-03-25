@@ -51,6 +51,13 @@
 //    Console.WriteLine(inverses[i]);
 //}
 //которая принимает строку скобок и определяет, допустим ли порядок скобок
-string input = "(())((()())())";
-bool result = Kata.ValidParentheses(input);
-Console.WriteLine(result);
+//string input = "(())((()())())";
+//bool result = Kata.ValidParentheses(input);
+//Console.WriteLine(result);
+
+//написать функцию, которая возвращает время с полуночи в миллисекундах.
+int h = 3;
+int m = 24;
+int s = 34;
+int t = Kata.Past(h, m,s);
+Console.WriteLine(t);

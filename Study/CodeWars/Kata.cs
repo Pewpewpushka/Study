@@ -316,7 +316,7 @@ namespace CodeWars
             {
                 if (double.IsNaN(num) || double.IsInfinity(num))
                 {
-                    
+
                     continue;
                 }
                 result += num;
@@ -353,12 +353,13 @@ namespace CodeWars
 
         //добавить в массив такое же количество исмволов только если + то -
         public static int[] InvertValues(int[] input)
-        {     int[] result = new int[input.Length];
+        {
+            int[] result = new int[input.Length];
             for (int i = 0; i < input.Length; i++)
-                {
+            {
                 result[i] = -input[i];
-                }
-                return result;
+            }
+            return result;
 
         }
         //for (int i = 0; i < input.Count(); i++) input[i] *= -1;
@@ -392,7 +393,19 @@ namespace CodeWars
             return stack.Count == 0;
 
 
-            
+
+        }
+        //написать функцию, которая возвращает время с полуночи в миллисекундах.
+        public static int Past(int h, int m, int s)
+        {
+            int result = 0;
+
+            result += h * 60 * 60 * 100;
+            result += m * 60 * 1000;
+            result += s * 1000;
+
+            return result;
+
         }
     }
 
