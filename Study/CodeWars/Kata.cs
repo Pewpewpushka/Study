@@ -400,13 +400,22 @@ namespace CodeWars
         {
             int result = 0;
 
-            result += h * 60 * 60 * 100;
+            result += h * 60 * 60 * 1000;
             result += m * 60 * 1000;
             result += s * 1000;
 
             return result;
+            //h *= 3600000; //hours to milisecs
+
+            //m *= 60000; // minutes to milisecs
+
+            //s *= 1000; // seconds to milisec
+
+
+            //return h + m + s; //add all
 
         }
+
     }
 
 }
