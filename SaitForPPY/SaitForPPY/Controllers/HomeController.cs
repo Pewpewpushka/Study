@@ -7,14 +7,19 @@ namespace SaitForPPY.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        public IActionResult PrintInfo() { return View(); }
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _configuration;
+        public HomeController( ILogger<HomeController> logger,IConfiguration configuration) 
         {
             _logger = logger;
+            _configuration = configuration;
         }
+
+        public IActionResult PrintInfo() { return View(); }
+       
 
         public IActionResult Index()
         {
+            var adminName= _configuration.GetSection("Admin:Name" );
             return View();
         }
 
