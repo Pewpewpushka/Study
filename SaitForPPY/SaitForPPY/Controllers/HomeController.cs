@@ -14,13 +14,13 @@ namespace SaitForPPY.Controllers
             _configuration = configuration;
         }
 
-        public IActionResult PrintInfo() { return View(); }
+        //public IActionResult PrintInfo() { return View(); }
         public IActionResult PrintValue()
         {
             int age = 16;
             string name = "Mikhail";
             var user = new User { Name = name, Age = age };
-            return View(); 
+            return View(name); 
         }
        
 
