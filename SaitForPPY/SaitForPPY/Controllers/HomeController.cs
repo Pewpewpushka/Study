@@ -15,6 +15,13 @@ namespace SaitForPPY.Controllers
         }
 
         public IActionResult PrintInfo() { return View(); }
+        public IActionResult PrintValue()
+        {
+            int age = 16;
+            string name = "Mikhail";
+            var user = new User { Name = name, Age = age };
+            return View(); 
+        }
        
 
         public IActionResult Index()
