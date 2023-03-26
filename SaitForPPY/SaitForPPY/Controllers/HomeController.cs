@@ -20,7 +20,7 @@ namespace SaitForPPY.Controllers
             int age = 16;
             string name = "Mikhail";
             var user = new User { Name = name, Age = age };
-            return View(name); 
+            return View(); 
         }
        
 
