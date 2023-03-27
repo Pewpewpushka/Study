@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SaitForPPY.Models;
 using System.Diagnostics;
+using SaitForPPY.Controllers;
 
 namespace SaitForPPY.Controllers
 {
@@ -18,9 +19,8 @@ namespace SaitForPPY.Controllers
         public IActionResult PrintValue()
         {
             int age = 16;
-            string name = "Mikhail";
-            var user = new User { Name = name, Age = age };
-            return View(); 
+            var user = new User {  Age = age };
+            return View(user);  
         }
        
 
