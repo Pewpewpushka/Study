@@ -6,29 +6,29 @@ using SaitForPPY.Controllers;
 namespace SaitForPPY.Controllers
 {
     public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IConfiguration _configuration;
+    {   public  ILogger<HomeController> _logger;
+        public IConfiguration _configuration;
         public HomeController( ILogger<HomeController> logger,IConfiguration configuration) 
         {
             _logger = logger;
             _configuration = configuration;
         }
-
+        public IActionResult Index()
+        {
+           
+            return View();
+        }
+        #region Ввод значений
         //public IActionResult PrintInfo() { return View(); }
+        [HttpGet]
         public IActionResult PrintValue()
         {
-            int age = 16;
+            int age = 65;
             var user = new User {  Age = age };
             return View(user);  
         }
-       
+        #endregion
 
-        public IActionResult Index()
-        {
-            var adminName= _configuration.GetSection("Admin:Name" );
-            return View();
-        }
 
         public IActionResult Privacy()
         {
