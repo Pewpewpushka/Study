@@ -1,0 +1,14 @@
+﻿@using SaitForPPY.Controllers;
+@model List<User>
+@{
+    ViewData["Title"] = "PrintValueColletion";
+}
+
+<h1>PrintValueColletion</h1>
+<div class=" card">
+    @foreach(var item in Model)
+    {
+        <p class="card-text">@item.Name-@item.Age</p>
+    }
+</div>
+

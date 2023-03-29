@@ -29,7 +29,24 @@ namespace SaitForPPY.Controllers
         }
         #endregion
 
+        #region Коллекции
 
+        [HttpGet]
+        public IActionResult PrintValueColletion()
+        {
+            var numbersList = new List<int> { 1, 2, 3, 4, 5 };
+            var numbersArrey = new string[] { "1", "2", "3" };
+            var users = new List<User>
+            {
+                new User {Name= "Андрей", Age = 17},
+                new User {Name= "Михаил", Age = 35},
+                new User {Name= "Владимир", Age = 23},
+            };
+            return View(users);
+        }
+
+
+        #endregion
         public IActionResult Privacy()
         {
             return View();
