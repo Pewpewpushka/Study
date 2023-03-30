@@ -45,7 +45,16 @@ namespace SaitForPPY.Controllers
             return View(users);
         }
 
+        #endregion
 
+
+        #region Результат
+        [HttpGet]
+        public IActionResult Calculate(int firstNumber, int secondNumber)
+        {
+            var result = firstNumber + secondNumber;
+            return View(result);
+        }
         #endregion
         public IActionResult Privacy()
         {
