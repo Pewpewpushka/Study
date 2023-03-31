@@ -8,6 +8,8 @@ namespace SaitForPPY.Controllers
     public class HomeController : Controller
     {   public  ILogger<HomeController> _logger;
         public IConfiguration _configuration;
+        private object _userService;
+
         public HomeController( ILogger<HomeController> logger,IConfiguration configuration) 
         {
             _logger = logger;
@@ -55,6 +57,28 @@ namespace SaitForPPY.Controllers
             var result = firstNumber + secondNumber;
             return View(result);
         }
+        #endregion
+
+        #region Передача данных в БД
+        [HttpGet]
+        
+        public IActionResult CreateUser()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateUser(CreateUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                object value = await _userService.AddUser(model.Name);
+                return RedirectToAction("GetAllUsers", "Account");
+            }
+            return View();
+        }
+
+
         #endregion
         public IActionResult Privacy()
         {

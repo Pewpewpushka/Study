@@ -1,0 +1,23 @@
+﻿@using SaitForPPY.Controllers
+@model CreateUserViewModel
+@{
+    ViewData["Title"] = "Создание пользователей";
+}
+
+<div class="card col-md-12">
+    <from asp-action="CreateUser" asp-controller ="Home" method ="post">
+        <div asp-validation-summary="All" style="font-size:23px; font-family:Impact" class="text-danger"></div>
+        <div class="mb-3"> 
+            <label class=" form-label">Name</label>
+            <input type ="text" asp-for="Name" class="front-control"/>
+            </div>
+        <div class="mb-3">
+            <label class=" form-label">Age</label>
+            <input type="text" asp-for="Age" class="front-control" />
+        </div>
+        <div>
+            <button class="btn btn-primary float-right" type ="submit">Отправить</button>
+        </div>
+    </from>
+</div>
+
