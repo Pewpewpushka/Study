@@ -8,7 +8,7 @@ namespace SaitForPPY.Controllers
     public class HomeController : Controller
     {   public  ILogger<HomeController> _logger;
         public IConfiguration _configuration;
-        private object _userService;
+       
 
         public HomeController( ILogger<HomeController> logger,IConfiguration configuration) 
         {
@@ -72,7 +72,8 @@ namespace SaitForPPY.Controllers
         {
             if (ModelState.IsValid)
             {
-                object value = await _userService.AddUser(model.Name);
+               await UserService.AddUser(model);
+               
                 return RedirectToAction("GetAllUsers", "Account");
             }
             return View();
