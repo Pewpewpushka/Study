@@ -1,4 +1,6 @@
-﻿namespace SaitForPPY.Controllers
+﻿using SaitForPPY.Models;
+
+namespace SaitForPPY.Controllers
 {
     public static class UserService
     {

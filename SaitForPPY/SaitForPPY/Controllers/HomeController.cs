@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SaitForPPY.Models;
 using System.Diagnostics;
-using SaitForPPY.Controllers;
 
 namespace SaitForPPY.Controllers
 {

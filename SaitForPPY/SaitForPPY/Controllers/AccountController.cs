@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SaitForPPY.Models;
 
 namespace SaitForPPY.Controllers
 {
-	public class AccountController : Controller
+    public class AccountController : Controller
 	{
         public ILogger<AccountController> _logger;
         public IConfiguration _configuration;
