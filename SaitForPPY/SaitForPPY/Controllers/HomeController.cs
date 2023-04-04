@@ -73,7 +73,7 @@ namespace SaitForPPY.Controllers
             {
                await UserService.AddUser(model);
                
-               // return RedirectToAction("GetAllUsers", "Account");
+                return RedirectToAction("GetAllUsers", "Account");
             }
             return View();
         }
