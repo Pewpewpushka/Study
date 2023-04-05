@@ -10,6 +10,9 @@ namespace SaitForPPY.Models
         [Range(1, 110, ErrorMessage = "Недопустимый возраст")]
         public int Age { get; set; }
         public string Adress { get; set; }
+        [Required(ErrorMessage = "Введите номер телефона")]
+        [MinLength(11, ErrorMessage = "Длина символа не должна быть меньше 11 символов")]
         public int Phone { get; set; }
+
     }
 }
