@@ -15,6 +15,7 @@ namespace SaitForPPY.Models
         [Required(ErrorMessage = "Введите номер телефона чтобы мы могли связаться с вами")]
         [MinLength(11, ErrorMessage = "Длина символа не должна быть меньше 11 символов")]
         public int Phone { get; set; }
-
+        [CardLenchAtributes(19, ErrorMessage="Некорекктный номер карты")]
+         public int NumberCard { get; set; }
     }
 }

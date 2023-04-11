@@ -1,12 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
 
 namespace SaitForPPY.Models
 {
-    public class CardLenchAtributes : Controller
+    public class CardLenchAtributes : ValidationAttribute
     {
-        public IActionResult Index()
+        private const int LengthCard = 19;
+        private int lenghtValue;
+
+        public CardLenchAtributes(int lenght)
         {
-            return View();
+
+        }
+
+        
+
+        public override bool IsValid(object value)
+        {
+            var lengthValue = value.ToString().Length;
+            if (value!= null && LengthCard==lenghtValue) 
+                return true;
+            return false;
         }
     }
 }
