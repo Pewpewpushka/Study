@@ -20,17 +20,17 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+//app.Use(async (context, next) =>
+//{
+//    var endpoint = context.GetEndpoint();
+//    var rulesEndpoint = (endpoint as RouteEndpoint).RoutePattern.RawText;
+//    Console.WriteLine(endpoint);
+//});
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-app.Use(async (context, next) =>
-{
-    var endpoint = context.GetEndpoint();
-    var rulesEndpoint = (endpoint as RouteEndpoint).RoutePattern.RawText;
-    Console.WriteLine(endpoint);
-});
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
