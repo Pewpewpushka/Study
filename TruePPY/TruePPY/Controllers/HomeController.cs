@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using TruePPY.Domain.Entity;
 using TruePPY.Models;
 
 namespace TruePPY.Controllers
@@ -15,6 +16,12 @@ namespace TruePPY.Controllers
 
         public IActionResult Index()
         {
+            SystemsPPY  systemsPPY = new SystemsPPY() 
+            {
+                Name= "Home-45",
+                Density = 45
+             
+            };
             return View();
         }
 
