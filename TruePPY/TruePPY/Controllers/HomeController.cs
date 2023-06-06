@@ -22,7 +22,7 @@ namespace TruePPY.Controllers
                 Density = 45
              
             };
-            return View();
+            return View(systemsPPY);
         }
 
         public IActionResult Privacy()
