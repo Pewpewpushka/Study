@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DocumentFormat.OpenXml.Wordprocessing;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Linq;
+using WebApplicationNewSait.Domain.Entity;
 using WebApplicationNewSait.Models;
 
 namespace WebApplicationNewSait.Controllers
@@ -15,7 +18,14 @@ namespace WebApplicationNewSait.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            PolyurethaneFoam polyurethaneFoam = new PolyurethaneFoam()
+            {
+                Name = "M-200",
+                Properties= 200
+                
+            };
+
+            return View(polyurethaneFoam);
         }
 
         public IActionResult Privacy()

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using WebApplicationNewSait.Domain.Enum;
 
 namespace WebApplicationNewSait.Domain.Entity
 {
-    internal class PolyurethaneFoam
+    public class PolyurethaneFoam
     {
         public int Id { get; set; }
         public string Name { get; set; }
