@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using WebApplicationNewSait.DAL.Interfaces;
 using WebApplicationNewSait.Domain.Entity;
 
+
 namespace WebApplicationNewSait.DAL.Repositories
 {
     public class PolyurethaneFoamRepositories : IPolyurethaneFoamRepositories
