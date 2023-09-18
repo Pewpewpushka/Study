@@ -1,7 +1,10 @@
 ﻿using DocumentFormat.OpenXml.Wordprocessing;
 using Microsoft.AspNetCore.Mvc;
+using NUnit.Framework;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using WebApplicationNewSait.DAL.Interfaces;
 using WebApplicationNewSait.Domain.Entity;
 using WebApplicationNewSait.Models;
 
@@ -9,23 +12,19 @@ namespace WebApplicationNewSait.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        
+        private readonly IPolyurethaneFoamRepositories _polyurethaneFoamRepositories;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IPolyurethaneFoamRepositories polyurethaneFoamRepositories)
         {
-            _logger = logger;
+            _polyurethaneFoamRepositories= polyurethaneFoamRepositories;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> IndexAsync()
         {
-            PolyurethaneFoam polyurethaneFoam = new PolyurethaneFoam()
-            {
-                Name = "M-200",
-                Properties= 200
-                
-            };
+            var response = await _polyurethaneFoamRepositories.Select();
 
-            return View(polyurethaneFoam);
+            return View();
         }
 
         public IActionResult Privacy()

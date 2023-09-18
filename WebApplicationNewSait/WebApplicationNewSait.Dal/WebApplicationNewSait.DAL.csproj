@@ -14,8 +14,4 @@
     <ProjectReference Include="..\WebApplicationNewSait.Domain\WebApplicationNewSait.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-
 </Project>
