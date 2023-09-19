@@ -26,9 +26,9 @@ namespace WebApplicationNewSait.DAL.Repositories
         {
             throw new NotImplementedException();
         }
-        public IEnumerable<PolyurethaneFoam> Select()
+       public async Task<IEnumerable<PolyurethaneFoam>> Select()
         {
-            return (IEnumerable<PolyurethaneFoam>)_db.PolyurethaneFoam.ToListAsync();
+            return await _db.PolyurethaneFoam.ToListAsync();
         }
 
         public bool Delete(PolyurethaneFoam entity)
