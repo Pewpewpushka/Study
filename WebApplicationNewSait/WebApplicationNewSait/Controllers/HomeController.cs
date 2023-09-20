@@ -13,17 +13,9 @@ namespace WebApplicationNewSait.Controllers
 {
     public class HomeController : Controller
     {
-        
-        private readonly IPolyurethaneFoamRepositories _polyurethaneFoamRepositories;
-
-        public HomeController(IPolyurethaneFoamRepositories polyurethaneFoamRepositories)
-        {
-            _polyurethaneFoamRepositories= polyurethaneFoamRepositories;
-        }
-
         public async Task<IActionResult> IndexAsync()
         {
-            var response = await _polyurethaneFoamRepositories.Select();
+           
 
             return View();
         }
