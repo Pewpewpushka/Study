@@ -22,9 +22,9 @@ namespace WebApplicationNewSait.DAL.Repositories
         {
             throw new NotImplementedException();
         }
-        public PolyurethaneFoam Get(int id)
+        public async PolyurethaneFoam Get(int id)
         {
-            throw new NotImplementedException();
+            return await _db.PolyurethaneFoam.FirstOrDefaultAsync(x => x.Id == id);
         }
        public async Task<IEnumerable<PolyurethaneFoam>> Select()
         {
