@@ -22,7 +22,7 @@ namespace WebApplicationNewSait.DAL.Repositories
         {
             throw new NotImplementedException();
         }
-        public async PolyurethaneFoam Get(int id)
+        public async Task<PolyurethaneFoam> Get(int id)
         {
             return await _db.PolyurethaneFoam.FirstOrDefaultAsync(x => x.Id == id);
         }
@@ -42,5 +42,9 @@ namespace WebApplicationNewSait.DAL.Repositories
             throw new NotImplementedException();
         }
 
+        PolyurethaneFoam IBaseRepositories<PolyurethaneFoam>.Get(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
