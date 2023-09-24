@@ -9,6 +9,6 @@ namespace WebApplicationNewSait.DAL.Interfaces
 {
     public interface IPolyurethaneFoamRepositories:IBaseRepositories<PolyurethaneFoam>
     {
-        PolyurethaneFoam GetByName(string name);
+        PolyurethaneFoam GetByNameAsync(string name);
     }
 }

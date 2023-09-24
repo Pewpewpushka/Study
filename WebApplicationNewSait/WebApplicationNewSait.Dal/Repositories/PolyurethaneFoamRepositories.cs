@@ -18,9 +18,11 @@ namespace WebApplicationNewSait.DAL.Repositories
         {
             _db = db;
         }
-        public bool Create(PolyurethaneFoam entity)
+        public async Task<bool> Create(PolyurethaneFoam entity)
         {
-            throw new NotImplementedException();
+            await _db.PolyurethaneFoam.AddAsync(entity);
+            await _db.SaveChangesAsync();
+            return true;
         }
         public async Task<PolyurethaneFoam> Get(int id)
         {
@@ -31,18 +33,35 @@ namespace WebApplicationNewSait.DAL.Repositories
             return await _db.PolyurethaneFoam.ToListAsync();
         }
 
-        public bool Delete(PolyurethaneFoam entity)
+        public async Task<bool> Delete(PolyurethaneFoam entity)
         {
-            throw new NotImplementedException();
+             _db.PolyurethaneFoam.Remove(entity);
+            await _db.SaveChangesAsync();
+            return true;
         }
 
 
-        public PolyurethaneFoam GetByName(string name)
+        public async Task<PolyurethaneFoam> GetByNameAsync(string name)
         {
-            throw new NotImplementedException();
+            return await _db.PolyurethaneFoam.FirstOrDefaultAsync(x => x.Name == name);
         }
 
         PolyurethaneFoam IBaseRepositories<PolyurethaneFoam>.Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        PolyurethaneFoam IPolyurethaneFoamRepositories.GetByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IBaseRepositories<PolyurethaneFoam>.Create(PolyurethaneFoam entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IBaseRepositories<PolyurethaneFoam>.Delete(PolyurethaneFoam entity)
         {
             throw new NotImplementedException();
         }
