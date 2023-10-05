@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace WebApplicationNewSait.DAL
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         {
-            Database.EnsureCreated();
+            
         }
         public DbSet<PolyurethaneFoam> PolyurethaneFoam { get; set; }
     }
