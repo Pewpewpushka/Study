@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.34031.109
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPUmarket", "PPUmarket\PPUmarket.csproj", "{B29BFA5F-70CE-4312-9F1E-83486A50DE10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FA56BBD7-6F36-434F-9DF9-35B35EB0DA78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPUmarket.Domain", "PPUmarket.Domain\PPUmarket.Domain.csproj", "{C61C028F-36EE-4049-B148-8C65D9C9DA7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B29BFA5F-70CE-4312-9F1E-83486A50DE10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29BFA5F-70CE-4312-9F1E-83486A50DE10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29BFA5F-70CE-4312-9F1E-83486A50DE10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29BFA5F-70CE-4312-9F1E-83486A50DE10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C61C028F-36EE-4049-B148-8C65D9C9DA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61C028F-36EE-4049-B148-8C65D9C9DA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61C028F-36EE-4049-B148-8C65D9C9DA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61C028F-36EE-4049-B148-8C65D9C9DA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C61C028F-36EE-4049-B148-8C65D9C9DA7F} = {FA56BBD7-6F36-434F-9DF9-35B35EB0DA78}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8743FBD-1370-4801-BC45-B0B5E4DA6C99}
+	EndGlobalSection
+EndGlobal
