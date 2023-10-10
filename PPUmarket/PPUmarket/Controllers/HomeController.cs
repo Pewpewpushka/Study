@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PPUmarket.Domain.Entity;
 using PPUmarket.Models;
 using System.Diagnostics;
 
@@ -15,6 +16,7 @@ namespace PPUmarket.Controllers
 
         public IActionResult Index()
         {
+            Foam
             return View();
         }
 
