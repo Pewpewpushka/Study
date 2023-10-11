@@ -15,6 +15,7 @@ namespace WebApplicationNewSait.Domain.Enum
         IntegralPolyurethaneFoam = 3,
         [Display(Name = "Полиуретановый эластомер для виброизоляции")]
         PolyurethaneElastomerVibrationIsolation = 4
+
        
 
 

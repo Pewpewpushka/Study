@@ -13,11 +13,16 @@ namespace PPUmarket.Controllers
         {
             _logger = logger;
         }
-
         public IActionResult Index()
         {
-            Foam
-            return View();
+            Foam foam = new Foam() 
+            {
+                Name= "Home",
+
+                Description="djsgjg"
+
+            };
+            return View(foam);
         }
 
         public IActionResult Privacy()
