@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace PPUmarket.DAL.Interfaces
 {
-    internal interface IBaseRepository
+    public interface IBaseRepository<T>
     {
+        bool Create (T entity);
+
+        T Get (int id);
+
+        IEnumerable<T> Select();
+
+        bool Delete (T entity);
+
+
     }
 }

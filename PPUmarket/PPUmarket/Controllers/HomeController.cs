@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PPUmarket.DAL.Interfaces;
 using PPUmarket.Domain.Entity;
 using PPUmarket.Models;
 using System.Diagnostics;
@@ -7,22 +8,15 @@ namespace PPUmarket.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IFoamRepository _foamRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IFoamRepository foamRepository)
         {
-            _logger = logger;
+            _foamRepository = foamRepository;
         }
         public IActionResult Index()
         {
-            Foam foam = new Foam() 
-            {
-                Name= "Home",
-
-                Description="djsgjg"
-
-            };
-            return View(foam);
+            return View();
         }
 
         public IActionResult Privacy()

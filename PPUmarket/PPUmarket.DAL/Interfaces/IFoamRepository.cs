@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PPUmarket.Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace PPUmarket.DAL.Interfaces
 {
-    internal interface IFoamRepository
+    public interface IFoamRepository : IBaseRepository<Foam>
     {
+
+        Foam GetByName(string name);
+
     }
 }
