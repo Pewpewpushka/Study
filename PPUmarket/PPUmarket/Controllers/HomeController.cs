@@ -2,6 +2,7 @@
 using PPUmarket.DAL.Interfaces;
 using PPUmarket.Domain.Entity;
 using PPUmarket.Models;
+using System.Collections.Generic;
 using System.Diagnostics;
 
 namespace PPUmarket.Controllers
@@ -14,11 +15,12 @@ namespace PPUmarket.Controllers
         {
             _foamRepository = foamRepository;
         }
-        public IActionResult Index()
+        public async Task<IEnumerable<Foam>> Select()
         {
-            return View();
-        }
+            IEnumerable<Foam> response = await Task.FromResult(_foamRepository.Select());
 
+            return response;
+        }
         public IActionResult Privacy()
         {
             return View();

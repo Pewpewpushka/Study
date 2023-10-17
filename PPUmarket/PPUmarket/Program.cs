@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using PPUmarket.DAL;
+using PPUmarket.DAL.Interfaces;
+using PPUmarket.DAL.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,7 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connection));
+builder.Services.AddScoped<IFoamRepository,FoamRepository>();
 
 var app = builder.Build();
 

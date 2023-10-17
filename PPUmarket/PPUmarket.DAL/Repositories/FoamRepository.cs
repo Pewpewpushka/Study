@@ -1,4 +1,5 @@
-﻿using PPUmarket.DAL.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using PPUmarket.DAL.Interfaces;
 using PPUmarket.Domain.Entity;
 using System;
 using System.Collections.Generic;
@@ -10,17 +11,27 @@ namespace PPUmarket.DAL.Repositories
 {
     public class FoamRepository : IFoamRepository
     {
+        private readonly ApplicationDbContext _db;
+
+        public FoamRepository(ApplicationDbContext db)
+        {
+            _db = db;
+        }
+
         public bool Create(Foam entity)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(Foam entity)
+        public Foam Get(int id)
         {
             throw new NotImplementedException();
         }
-
-        public Foam Get(int id)
+        public async Task<IEnumerable<Foam>> Select()
+        {
+            return await _db.Foam.ToListAsync();
+        }
+        public bool Delete(Foam entity)
         {
             throw new NotImplementedException();
         }
@@ -30,7 +41,7 @@ namespace PPUmarket.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Foam> Select()
+        IEnumerable<Foam> IBaseRepository<Foam>.Select()
         {
             throw new NotImplementedException();
         }
