@@ -4,6 +4,7 @@ using PPUmarket.Domain.Entity;
 using PPUmarket.Models;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace PPUmarket.Controllers
 {
@@ -21,6 +22,18 @@ namespace PPUmarket.Controllers
 
         //    return response;
         //}
+
+        //public async Task<IActionResult> Index()
+        //{
+        //    var response = await Task.FromResult(_foamRepository.Select());
+        //    return (IActionResult)response;
+        //}
+        public async Task<IActionResult> Index()
+        {
+            var response = _foamRepository.Select();
+
+            return View(await Task.FromResult(response));
+        }
         public IActionResult Privacy()
         {
             return View();
