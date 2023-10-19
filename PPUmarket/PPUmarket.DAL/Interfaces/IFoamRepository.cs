@@ -11,6 +11,6 @@ namespace PPUmarket.DAL.Interfaces
     {
 
         Foam GetByName(string name);
-
+        Task<IEnumerable<Foam>> ToListAsync();
     }
 }

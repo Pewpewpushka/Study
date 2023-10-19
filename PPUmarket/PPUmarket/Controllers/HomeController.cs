@@ -16,24 +16,25 @@ namespace PPUmarket.Controllers
         {
             _foamRepository = foamRepository;
         }
+
         //public async Task<IEnumerable<Foam>> Select()
         //{
         //    IEnumerable<Foam> response = await Task.FromResult(_foamRepository.Select());
 
         //    return response;
         //}
+        public async Task<IActionResult> Indexasync()
+        {
+            var response = _foamRepository.Select();
+            return View();
+        }
 
         //public async Task<IActionResult> Index()
         //{
-        //    var response = await Task.FromResult(_foamRepository.Select());
-        //    return (IActionResult)response;
-        //}
-        public async Task<IActionResult> Index()
-        {
-            var response = _foamRepository.Select();
+        //    var response = _foamRepository.Select();
 
-            return View(await Task.FromResult(response));
-        }
+        //    return View(await Task.FromResult(response));
+        //}
         public IActionResult Privacy()
         {
             return View();

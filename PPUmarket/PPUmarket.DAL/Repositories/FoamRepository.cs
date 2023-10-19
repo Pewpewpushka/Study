@@ -4,6 +4,7 @@ using PPUmarket.Domain.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -27,7 +28,12 @@ namespace PPUmarket.DAL.Repositories
         {
             throw new NotImplementedException();
         }
-        public async Task<IEnumerable<Foam>> Select()
+        //public async Task<IEnumerable<Foam>> Select()
+        //{
+        //    return await _db.Foam.ToListAsync();
+        //}
+
+        public async Task<List<Foam>> Select()
         {
             return await _db.Foam.ToListAsync();
         }
@@ -42,6 +48,11 @@ namespace PPUmarket.DAL.Repositories
         }
 
         IEnumerable<Foam> IBaseRepository<Foam>.Select()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IEnumerable<Foam>> ToListAsync()
         {
             throw new NotImplementedException();
         }
