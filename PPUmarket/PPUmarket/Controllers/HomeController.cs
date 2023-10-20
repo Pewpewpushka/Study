@@ -10,13 +10,7 @@ namespace PPUmarket.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IFoamRepository _foamRepository;
-
-        public HomeController(IFoamRepository foamRepository)
-        {
-            _foamRepository = foamRepository;
-        }
-
+       
         //public async Task<IEnumerable<Foam>> Select()
         //{
         //    IEnumerable<Foam> response = await Task.FromResult(_foamRepository.Select());
@@ -25,7 +19,6 @@ namespace PPUmarket.Controllers
         //}
         public async Task<IActionResult> Indexasync()
         {
-            var response = _foamRepository.Select();
             return View();
         }
 
