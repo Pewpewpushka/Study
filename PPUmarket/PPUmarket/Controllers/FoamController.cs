@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PPUmarket.DAL.Interfaces;
 using PPUmarket.Domain.Entity;
+using System.Linq;
 
 namespace PPUmarket.Controllers
 {
@@ -18,10 +20,10 @@ namespace PPUmarket.Controllers
 
         //    return View(response);
         //}
-        public async Task<IActionResult> GetFoamsAsync()
+        [HttpGet]
+        public async Task<IActionResult> GetFoams()
         {
-            var response = await _foamRepository.Select().ToListAsync();
-
+            var response = await _foamRepository.Select().AsQueryable().ToListAsync();
             return View(response);
         }
 

@@ -17,7 +17,7 @@ namespace PPUmarket.Controllers
 
         //    return response;
         //}
-        public async Task<IActionResult> Indexasync()
+        public IActionResult Index()
         {
             return View();
         }
