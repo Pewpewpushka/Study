@@ -23,9 +23,23 @@ namespace PPUmarket.Controllers
         [HttpGet]
         public async Task<IActionResult> GetFoams()
         {
-            var response = await _foamRepository.Select().AsQueryable().ToListAsync();
-            return View(response);
+            //return await _foamRepository.Select();
+           
         }
+    //public class SuperHeroController : ControllerBase
+    //{
+    //    private readonly ISuperHeroService _superHeroService;
+
+    //    public SuperHeroController(ISuperHeroService superHeroService)
+    //    {
+    //        _superHeroService = superHeroService;
+    //    }
+
+    //    [HttpGet]
+    //    public async Task<ActionResult<List<SuperHero>>> GetAllHeroes()
+    //    {
+    //        return await _superHeroService.GetAllHeroes();
+    //    }
 
     }
 }
