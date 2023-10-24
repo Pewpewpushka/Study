@@ -21,25 +21,27 @@ namespace PPUmarket.Controllers
         //    return View(response);
         //}
         [HttpGet]
-        public async Task<IActionResult> GetFoams()
+        public ActionResult<List<Foam>> GetFoams()
         {
-            //return await _foamRepository.Select();
-           
+            var response = _foamRepository.Select();
+
+            return View(response);
+
         }
-    //public class SuperHeroController : ControllerBase
-    //{
-    //    private readonly ISuperHeroService _superHeroService;
+        //public class SuperHeroController : ControllerBase
+        //{
+        //    private readonly ISuperHeroService _superHeroService;
 
-    //    public SuperHeroController(ISuperHeroService superHeroService)
-    //    {
-    //        _superHeroService = superHeroService;
-    //    }
+        //    public SuperHeroController(ISuperHeroService superHeroService)
+        //    {
+        //        _superHeroService = superHeroService;
+        //    }
 
-    //    [HttpGet]
-    //    public async Task<ActionResult<List<SuperHero>>> GetAllHeroes()
-    //    {
-    //        return await _superHeroService.GetAllHeroes();
-    //    }
+        //    [HttpGet]
+        //    public async Task<ActionResult<List<SuperHero>>> GetAllHeroes()
+        //    {
+        //        return await _superHeroService.GetAllHeroes();
+        //    }
 
     }
 }
