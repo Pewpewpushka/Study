@@ -47,7 +47,7 @@ namespace PPUmarket.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        IEnumerable<Foam> IBaseRepository<Foam>.Select()
+        IEnumerable<Foam> IBaseRepository<Foam>.SelectAsync()
         {
             throw new NotImplementedException();
         }

@@ -12,7 +12,7 @@ namespace PPUmarket.DAL.Interfaces
 
         T Get (int id);
 
-        IEnumerable<T> Select();
+        IEnumerable<T> SelectAsync();
 
         bool Delete (T entity);
 
