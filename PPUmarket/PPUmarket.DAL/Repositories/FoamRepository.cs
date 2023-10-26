@@ -24,9 +24,9 @@ namespace PPUmarket.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Foam Get(int id)
+        public async Task<Foam> Get(int id)
         {
-            throw new NotImplementedException();
+            return await _db.Foam.FirstOrDefaultAsync(x=> x.Id == id);
         }
         //public async Task<IEnumerable<Foam>> Select()
         //{
@@ -42,9 +42,9 @@ namespace PPUmarket.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Foam GetByName(string name)
+        public async Task<Foam> GetByNameAsync(string name)
         {
-            throw new NotImplementedException();
+            return await _db.Foam.FirstOrDefaultAsync(x => x.Name == name);
         }
 
         IEnumerable<Foam> IBaseRepository<Foam>.SelectAsync()

@@ -10,7 +10,7 @@ namespace PPUmarket.DAL.Interfaces
     public interface IFoamRepository : IBaseRepository<Foam>
     {
 
-        Foam GetByName(string name);
+        Foam GetByNameAsync(string name);
         Task<IEnumerable<Foam>> ToListAsync();
     }
 }
