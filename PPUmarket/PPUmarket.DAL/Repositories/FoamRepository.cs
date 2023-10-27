@@ -19,9 +19,11 @@ namespace PPUmarket.DAL.Repositories
             _db = db;
         }
 
-        public bool Create(Foam entity)
+        public async Task<bool> Create(Foam entity)
         {
-            throw new NotImplementedException();
+            await _db.Foam.AddRangeAsync();
+            await _db.SaveChangesAsync();
+            return true;
         }
 
         public async Task<Foam> Get(int id)
@@ -39,7 +41,9 @@ namespace PPUmarket.DAL.Repositories
         }
         public bool Delete(Foam entity)
         {
-            throw new NotImplementedException();
+            _db.Foam.Remove(entity);
+            _db.SaveChangesAsync();
+            return true;
         }
 
         public async Task<Foam> GetByNameAsync(string name)
@@ -53,6 +57,26 @@ namespace PPUmarket.DAL.Repositories
         }
 
         public Task<IEnumerable<Foam>> ToListAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        Foam IFoamRepository.GetByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        Foam IBaseRepository<Foam>.Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IBaseRepository<Foam>.Create(Foam entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task GetByName(string v)
         {
             throw new NotImplementedException();
         }
