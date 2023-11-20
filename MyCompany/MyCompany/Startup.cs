@@ -33,7 +33,7 @@ namespace MyCompany
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment()) 
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -45,15 +45,16 @@ namespace MyCompany
             }
 
             app.UseHttpsRedirection();
+            app.UseRouting();
+            //подключаем поддержку статичных файлов
             app.UseStaticFiles();
 
-            app.UseRouting();
 
             app.UseAuthorization();
-
+            //реистрируем нужные нам маршруты
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapRazorPages();
+                endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
