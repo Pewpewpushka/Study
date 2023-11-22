@@ -50,7 +50,8 @@ namespace MyCompany
             //реистрируем нужные нам маршруты
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default","{controller=Home}/{action=Index}/{id?}");
+                
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
