@@ -14,11 +14,11 @@ namespace MyCompany
 {
     public class Startup
     {
-        public IConfiguration Configuration { get; }
+        //public IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
+            //services.AddRazorPages();
             //добавляем подержку контроллеров и представлений (mvc)
             services.AddControllersWithViews()
             //
