@@ -22,5 +22,6 @@ namespace MyCompany
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
     }
 }
