@@ -22,7 +22,7 @@ namespace MyCompany
         public void ConfigureServices(IServiceCollection services)
         {   //подключаем конфиг из appsetting.json
             Configuration.Bind("Project", new Config());
-            services.AddRazorPages();
+            //services.AddRazorPages();
             //добавляем подержку контроллеров и представлений (mvc)
             services.AddControllersWithViews()
             //

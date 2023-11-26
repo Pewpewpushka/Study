@@ -7,7 +7,6 @@
   <ItemGroup>
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
-    <Content Remove="Views\Shared\_Layout.cshtml" />
     <Content Remove="Views\Shared\_ViewStart.cshtml" />
   </ItemGroup>
 
