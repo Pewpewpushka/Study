@@ -12,6 +12,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using MyCompany.Domain.Repositories.Abstract;
+using MyCompany.Domain.Repositories.EntityFramework;
+using MyCompany.Domain;
 
 namespace MyCompany
 {
@@ -22,6 +25,24 @@ namespace MyCompany
         public void ConfigureServices(IServiceCollection services)
         {   //подключаем конфиг из appsetting.json
             Configuration.Bind("Project", new Config());
+            // подключаем нужный функционал приложения в качестве сервисов 
+            services.AddTransient<ITextFieldsRepository, EFTextFieldsRepository>();// если захотим сменить entity то здесь меняем занчение например меняем БД не микрософт а др
+            services.AddTransient<IServiceItemsRepository, EFServiceItemsRepository>();
+            services.AddTransient<DataManager>();// делаем транзиетными- пр запросе создается несколько объектов
+            // подключаем контекст БД
+            services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.ConnectionString));// в качестве строки подключ. используем из файла appsettings.json
+
+            //настраиваем identity систему
+            services.AddIdentity<IdentityUser, IdentityRole>(opts =>
+            {
+                opts.User.RequireUniqueEmail = true;
+                opts.Password.RequiredLength = 6;// минимальная длина для пароля
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.Password.RequireLowercase = false;
+                opts.Password.RequireUppercase = false;
+                opts.Password.RequireDigit = false;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
             //services.AddRazorPages();
             //добавляем подержку контроллеров и представлений (mvc)
             services.AddControllersWithViews()
