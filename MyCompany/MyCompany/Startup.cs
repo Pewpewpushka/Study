@@ -40,7 +40,7 @@ namespace MyCompany
                 opts.Password.RequireNonAlphanumeric = false;
                 opts.Password.RequireLowercase = false;
                 opts.Password.RequireUppercase = false;
-                opts.Password.RequireDigit = false;
+                opts.Password.RequireDigit = false;// Использовать только цифры
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
             //services.AddRazorPages();
@@ -49,7 +49,7 @@ namespace MyCompany
             //
             .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
         }
-
+        // порядок регистрации middlaware очень важен
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {      //в процессе разработки нам важно видеть какие именно ошибки
             if (env.IsDevelopment())
@@ -66,10 +66,14 @@ namespace MyCompany
             //}
 
             app.UseHttpsRedirection();
-            app.UseRouting();
             //подключаем поддержку статичных файлов
             app.UseStaticFiles();
-
+            // подключаем систему маршуртизации
+            app.UseRouting();
+            // подключаем уатинфикацию и авторизацию
+            app.UseCookiePolicy();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseAuthorization();
             //реистрируем нужные нам маршруты
