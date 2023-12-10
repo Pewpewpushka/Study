@@ -42,6 +42,15 @@ namespace MyCompany
                 opts.Password.RequireUppercase = false;
                 opts.Password.RequireDigit = false;// Использовать только цифры
             }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+            //настраиваем authentication cookie
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.Name = "myCompanyAuth";
+                options.Cookie.HttpOnly = true;
+                options.LoginPath = "/account/login";
+                options.AccessDeniedPath = "/account/accessdenied";
+                options.SlidingExpiration = true;
+            });
 
             //services.AddRazorPages();
             //настраиваем политику авторизации для Admin area
