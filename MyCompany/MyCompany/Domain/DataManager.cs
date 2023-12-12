@@ -9,13 +9,13 @@ namespace MyCompany.Domain
     public class DataManager
     {
         public ITextFieldsRepository TextFields { get; set; }
-        public IServiceItemsRepository ServiceItemsRepository { get; set; }
+        public IServiceItemsRepository ServiceItems { get; set; }
         // через свойства Datamanager будем управлять тем или иным действием
         public DataManager(ITextFieldsRepository textFieldsRepository, IServiceItemsRepository serviceItemsRepository ) 
         {
 
             TextFields = textFieldsRepository;
-            ServiceItemsRepository = serviceItemsRepository;
+            ServiceItems = serviceItemsRepository;
         }
     }
 }

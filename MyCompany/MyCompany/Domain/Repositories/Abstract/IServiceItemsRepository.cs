@@ -9,7 +9,7 @@ namespace MyCompany.Domain.Repositories.Abstract
     public interface IServiceItemsRepository
     {
         // метод выбора  всех услуг
-        IQueryable<ServiceItem> GetServiceItem();
+        IQueryable<ServiceItem> GetServiceItems();
         //выбрать, провалится в услугу выбрать ее по Id
         ServiceItem GetServiceItemById(Guid id);
         // обновить или создать новую услугу
