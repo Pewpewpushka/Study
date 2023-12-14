@@ -1606,6 +1606,6 @@ ul.link-list li:first-child {
   display: block;
 }
 
-/*a {
-	display :block;
-}*/
+a {
+  display: block;
+}
