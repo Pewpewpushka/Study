@@ -46,7 +46,7 @@ namespace MyCompany.Domain
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
                 Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
-                CodeWord = "PageIndex",
+                CodeWord = "PageIndex",// кодовые слова по которым будм работать
                 Title = "Главная"
             });
             modelBuilder.Entity<TextField>().HasData(new TextField

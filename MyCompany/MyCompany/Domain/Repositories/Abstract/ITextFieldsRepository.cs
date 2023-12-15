@@ -12,7 +12,7 @@ namespace MyCompany.Domain.Repositories.Abstract
         //выбрать текстовое поле по Id
         TextField GetTextFieldById(Guid id);
         //выбрать техтовое поле по его кодовому слову
-        TextField GetTextFieldCodeWord(string codeWord);
+       TextField GetTextFieldByCodeWord(string codeWord);
         // сохранить изменения в БД
         void SaveTextField(TextField entity);
         // удалить текстовое поле
