@@ -47,10 +47,10 @@ namespace MyCompany.Domain.Repositories.EntityFramework
             context.SaveChanges();// сохраняем в  Context
         }
 
-        public TextField GetTextFieldCodeWord(string codeWord)
-        {
-            throw new NotImplementedException();
-        }
+        //public TextField GetTextFieldCodeWord(string codeWord)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
 
