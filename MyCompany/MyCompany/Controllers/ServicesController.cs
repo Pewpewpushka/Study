@@ -19,7 +19,7 @@ namespace MyCompany.Controllers
         public IActionResult Index(Guid id)
         {   if(id != default)
             {
-                return View("Show",dataManager.ServiceItems.GetServiceItemsById(id));
+                return View("Show",dataManager.ServiceItems.GetServiceItemById(id));
             }
             ViewBag.TextField = dataManager.TextFields.GetTextFieldByCodeWord("PageServices");
             return View(dataManager.ServiceItems.GetServiceItems());
