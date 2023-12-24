@@ -11,10 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewComponents\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="bundleconfig.json" />
     <None Include="compilerconfig.json" />
     <None Include="Views\Shared\_Layout.cshtml" />
