@@ -189,9 +189,7 @@ section:last-child, article:last-child {
   .container {
     width: calc(100% - 40px);
   }
-}
-
-/* Row */
+} /* Row */
 .row {
   display: flex;
   flex-wrap: wrap;
