@@ -22,4 +22,5 @@ namespace MyCompany.Controllers
             return View(dataManager.TextFields.GetTextFieldByCodeWord("PageContacts"));
         }
     }
+
 }
