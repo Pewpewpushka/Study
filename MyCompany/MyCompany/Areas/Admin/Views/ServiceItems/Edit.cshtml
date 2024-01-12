@@ -20,6 +20,29 @@
                 <input asp-for="Title" />
                 <span asp-validation-for="Title"></span>
             </div>
+            <div class="row"
+                <script src="~/js/ckeditor4/ckeditor.js"></script>
+                <script src="~/js/ckeditor5/ckeditor.js"></script>
+                <div>
+                    @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                    {
+                <div>
+                    <textarea id="content1" name="content1"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Отправить" />
+                </div>
+                    }
+             </div>
+                <script>
+                document.addEventListener("DOMContentLoaded", function (event) {
+                 var editor = CKEDITOR.replace('content1');
+                 
+                 ClassicEditor.create(document.querySelector('#content2'));
+                });
+                </script>
+            </div>
+
             <div class="div-box">
                 <label asp-for="Subtitle"></label>
                 <input asp-for="Subtitle" />
