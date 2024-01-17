@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/ckeditor/contents.css">
+<script src="~/ckeditor/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('yourTextareaId');
+</script>
+<textarea id="yourTextareaId" name="editor1"></textarea>
+
+
+    <div class="row">
+        <script src="~/Scripts/ckeditor4/ckeditor.js"></script>
+        <script src="~/Scripts/ckeditor5/ckeditor.js"></script>
+        <script src="~/Scripts/ckfinder/ckfinder.js"></script>
+        <div>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+                    <div>
+                        <textarea id="content1" name="content1"></textarea>
+                    </div>
+                    <div>
+                        <textarea id="myeditor" name="content2"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Отправить" />
+                    </div>
+        }
+        </div>
+    </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+        //CKEditor 4
+        CKEDITOR.timestamp = "v=2";
+        var editor = CKEDITOR.replace('content1');
+        CKFinder.setupCKEditor(editor);
+
+        //CKEditor 5
+        ClassicEditor.create(document.querySelector('#content2'),
+            {
+                ckfinder: {
+                    uploadUrl: '/ckfinder/connector?command=QuickUpload&type=Files&responseType=json'
+                }
+            });
+    });
+</script>
+
