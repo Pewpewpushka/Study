@@ -1,51 +1,245 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE HTML>
+
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MyCompany2</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MyCompany2.styles.css" asp-append-version="true" />
+	<title>Phantom by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">MyCompany2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - MyCompany2 - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+				</a>
 
-    @await RenderSectionAsync("Scripts", required: false)
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Ipsum veroeros</a></li>
+				<li><a href="generic.html">Tempus etiam</a></li>
+				<li><a href="generic.html">Consequat dolor</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<header>
+					<h1>
+						This is Phantom, a free, fully responsive site<br />
+						template designed by <a href="http://html5up.net">HTML5 UP</a>.
+					</h1>
+					<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
+				</header>
+				<section class="tiles">
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic01.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Magna</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style2">
+						<span class="image">
+							<img src="images/pic02.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Lorem</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style3">
+						<span class="image">
+							<img src="images/pic03.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Feugiat</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic04.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Tempus</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style5">
+						<span class="image">
+							<img src="images/pic05.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Aliquam</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style6">
+						<span class="image">
+							<img src="images/pic06.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Veroeros</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style2">
+						<span class="image">
+							<img src="images/pic07.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Ipsum</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style3">
+						<span class="image">
+							<img src="images/pic08.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Dolor</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style1">
+						<span class="image">
+							<img src="images/pic09.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Nullam</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style5">
+						<span class="image">
+							<img src="images/pic10.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Ultricies</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style6">
+						<span class="image">
+							<img src="images/pic11.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Dictum</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+					<article class="style4">
+						<span class="image">
+							<img src="images/pic12.jpg" alt="" />
+						</span>
+						<a href="generic.html">
+							<h2>Pretium</h2>
+							<div class="content">
+								<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+							</div>
+						</a>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
 </html>
