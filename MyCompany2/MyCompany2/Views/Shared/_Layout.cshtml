@@ -2,6 +2,8 @@
 
 <html>
 <head>
+	@await Html.PartialAsync("MetatagsPartial")
+	@await Html.PartialAsync("CssPartial")
 	<title>Phantom by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -12,23 +14,7 @@
 	<div id="wrapper">
 
 		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-				</a>
-
-				<!-- Nav -->
-				<nav>
-					<ul>
-						<li><a href="#menu">Menu</a></li>
-					</ul>
-				</nav>
-
-			</div>
-		</header>
+		@await Html.PartialAsync("HeaderPartial")
 
 		<!-- Menu -->
 		<nav id="menu">
@@ -41,7 +27,10 @@
 				<li><a href="elements.html">Elements</a></li>
 			</ul>
 		</nav>
-
+		@RenderBody()
+	</div>
+	@await Html.PartialAsync("SidebarPartial")
+	</div>
 		<!-- Main -->
 		<div id="main">
 			<div class="inner">
@@ -190,14 +179,9 @@
 		</div>
 
 		<!-- Footer -->
-
+		@await Html.PartialAsync("FooterPartial")
 
 	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+		@await Html.PartialAsync("ScriptsPartial")
 </body>
 </html>

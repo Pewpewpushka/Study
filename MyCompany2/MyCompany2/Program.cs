@@ -23,3 +23,9 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddRazorPages();
+// Ниже тот фрагмент кода, который описывает автор видео
+builder.Services.AddControllersWithViews();
