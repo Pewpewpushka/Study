@@ -2,8 +2,23 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+
+app.UseRouting();
+
+// подключаем поддержку статичных файлов в приложении (css, js и т.д.)
+app.UseStaticFiles();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.Run();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -23,9 +38,7 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
-builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-// Ниже тот фрагмент кода, который описывает автор видео
-builder.Services.AddControllersWithViews();
+
+
+
