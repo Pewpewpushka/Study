@@ -1,44 +1,56 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using MyCompany.Service;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-builder.Services.AddControllersWithViews();
+internal class Program
+{ /*IConfiguration Configuration { get; }*/
+    private static void Main(string[] args)
+    {
+        
 
-var app = builder.Build();
+        var builder = WebApplication.CreateBuilder(args);
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
+        builder.Configuration.Bind("Project", new Config());
+        // Add services to the container.
+        builder.Services.AddRazorPages();
+        builder.Services.AddControllersWithViews();
+
+        var app = builder.Build();
+
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+
+        app.UseRouting();
+
+        // подключаем поддержку статичных файлов в приложении (css, js и т.д.)
+        app.UseStaticFiles();
+        app.MapControllerRoute(
+            name: "default",
+            pattern: "{controller=Home}/{action=Index}/{id?}");
+        app.Run();
+
+        // Configure the HTTP request pipeline.
+        if (!app.Environment.IsDevelopment())
+        {
+            app.UseExceptionHandler("/Error");
+            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            app.UseHsts();
+        }
+
+        app.UseHttpsRedirection();
+        app.UseStaticFiles();
+
+        app.UseRouting();
+
+        app.UseAuthorization();
+
+        app.MapRazorPages();
+
+        app.Run();
+    }
 }
-
-app.UseRouting();
-
-// подключаем поддержку статичных файлов в приложении (css, js и т.д.)
-app.UseStaticFiles();
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-app.Run();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
-
-
-
-
