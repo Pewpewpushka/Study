@@ -3,20 +3,26 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using MyCompany.Domain;
 using MyCompany.Service;
 
 internal class Program
 { /*IConfiguration Configuration { get; }*/
     private static void Main(string[] args)
     {
-        
+
 
         var builder = WebApplication.CreateBuilder(args);
 
         builder.Configuration.Bind("Project", new Config());
+        builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.ConnectionString));
+        //    builder.Services.AddDbContext<AppDbContext>(options =>
+        //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
         // Add services to the container.
         builder.Services.AddRazorPages();
         builder.Services.AddControllersWithViews();
+
 
         var app = builder.Build();
 
@@ -52,5 +58,5 @@ internal class Program
         app.MapRazorPages();
 
         app.Run();
-    }
-}
+ }   }
+
