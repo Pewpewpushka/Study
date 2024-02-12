@@ -3,9 +3,9 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyCompany.Domain;
-using MyCompany.Domain.Entities;
-using MyCompany.Service;
+using MyCompany2.Domain;
+using MyCompany2.Domain.Entities;
+using MyCompany2.Service;
 
 namespace MyCompany2.Areas.Admin.Controllers
 {

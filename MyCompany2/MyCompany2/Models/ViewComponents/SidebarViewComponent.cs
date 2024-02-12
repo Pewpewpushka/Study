@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
-using MyCompany.Domain;
+using MyCompany2.Domain;
 
-namespace MyCompany.Models.ViewComponents
+namespace MyCompany2.Models.ViewComponents
 {
     public class SidebarViewComponent: ViewComponent
     {

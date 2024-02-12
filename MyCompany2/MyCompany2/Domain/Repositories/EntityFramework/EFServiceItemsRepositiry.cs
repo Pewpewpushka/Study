@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using MyCompany.Domain.Entities;
-using MyCompany.Domain.Repositories.Abstract;
+using MyCompany2.Domain.Entities;
+using MyCompany2.Domain.Repositories.Abstract;
 
-namespace MyCompany.Domain.Repositories.EntityFramework
+namespace MyCompany2.Domain.Repositories.EntityFramework
 {
     public class EFServiceItemsRepository : IServiceItemsRepository
     {

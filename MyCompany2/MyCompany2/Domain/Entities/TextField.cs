@@ -2,7 +2,7 @@
 using System.Xml.Linq;
 using System;
 
-namespace MyCompany.Domain.Entities
+namespace MyCompany2.Domain.Entities
 {
     public class TextField : EntityBase
     {

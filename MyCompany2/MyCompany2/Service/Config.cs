@@ -1,4 +1,4 @@
-﻿namespace MyCompany.Service
+﻿namespace MyCompany2.Service
 {
     public class Config
     {

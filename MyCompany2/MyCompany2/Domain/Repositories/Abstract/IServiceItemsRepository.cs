@@ -1,10 +1,10 @@
-﻿using MyCompany.Domain.Entities;
+﻿using MyCompany2.Domain.Entities;
 using System.Linq;
 using System;
 using System.Threading.Tasks;
 
 
-namespace MyCompany.Domain.Repositories.Abstract
+namespace MyCompany2.Domain.Repositories.Abstract
 {
     public interface IServiceItemsRepository
     {

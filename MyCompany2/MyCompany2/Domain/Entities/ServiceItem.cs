@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
-namespace MyCompany.Domain.Entities
+namespace MyCompany2.Domain.Entities
 {
     public class ServiceItem : EntityBase
     {

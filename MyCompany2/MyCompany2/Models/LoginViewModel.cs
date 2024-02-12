@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-namespace MyCompany.Models
+namespace MyCompany2.Models
 {
     public class LoginViewModel
     { // пользователь вводит на форме свои данные для авторатизации

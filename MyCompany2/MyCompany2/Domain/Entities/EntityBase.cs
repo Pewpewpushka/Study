@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace MyCompany.Domain.Entities
+namespace MyCompany2.Domain.Entities
 {
     public class EntityBase
     {

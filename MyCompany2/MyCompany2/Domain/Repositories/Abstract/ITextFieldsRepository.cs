@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MyCompany.Domain.Entities;
-namespace MyCompany.Domain.Repositories.Abstract
+using MyCompany2.Domain.Entities;
+namespace MyCompany2.Domain.Repositories.Abstract
 {
     public interface ITextFieldsRepository
     {

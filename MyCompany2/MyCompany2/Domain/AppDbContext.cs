@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MyCompany.Domain.Entities;
-using System;
 
-namespace MyCompany.Domain
+using System;
+using MyCompany2.Domain.Entities;
+
+namespace MyCompany2.Domain
 {
     // создаем системного пользователя
     public class AppDbContext : IdentityDbContext<IdentityUser>
