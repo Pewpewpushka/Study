@@ -3,8 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using MyCompany.Domain;
-using MyCompany.Service;
+using MyCompany2.Domain;
+using MyCompany2.Service;
 
 internal class Program
 { /*IConfiguration Configuration { get; }*/
