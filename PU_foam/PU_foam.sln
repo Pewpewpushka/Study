@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.34408.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PU_foam", "PU_foam\PU_foam.csproj", "{381A41D0-8955-42E4-8F00-BAB1E346C533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{381A41D0-8955-42E4-8F00-BAB1E346C533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{381A41D0-8955-42E4-8F00-BAB1E346C533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{381A41D0-8955-42E4-8F00-BAB1E346C533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{381A41D0-8955-42E4-8F00-BAB1E346C533}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8158B06E-B125-44D2-912A-810FB35D29F1}
+	EndGlobalSection
+EndGlobal
